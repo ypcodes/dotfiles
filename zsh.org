@@ -1,0 +1,227 @@
+#+TITLE: Zsh Configuration
+#+PROPERTY: header-args:shell :tangle ~/.config/zsh/.zshrc :comments org
+
+#+begin_quote
+Zsh is a shell designed for interactive use, although it is also a powerful scripting
+language. Many of the useful features of bash, ksh, and tcsh were incorporated into
+zsh; many original features were added.
+#+end_quote
+
+* 目录 :toc@2:noexport:
+- [[#简介][简介]]
+  - [[#什么是-zsh][什么是 ~zsh~]]
+  - [[#为什么选择-zsh][为什么选择 ~zsh~]]
+  - [[#配置方法][配置方法]]
+- [[#基础配置][基础配置]]
+  - [[#basic][Basic]]
+  - [[#alias][Alias]]
+  - [[#补全设置][补全设置]]
+  - [[#vi-mode][Vi Mode]]
+  - [[#-上一级目录][~..~ 上一级目录]]
+  - [[#ctrl-d-退出-zsh][~Ctrl-d~ 退出 zsh]]
+  - [[#mkdir--cd][mkdir && cd]]
+- [[#扩展][扩展]]
+  - [[#加载插件][加载插件]]
+  - [[#主题][主题]]
+  - [[#fzf][fzf]]
+  - [[#语法高亮][语法高亮]]
+  - [[#vterm][vterm]]
+  - [[#auto-suggestion][auto-suggestion]]
+
+* 简介
+** 什么是 ~zsh~
+~Z shell~, 简称 ~zsh~, 是一个符合 posix 标准的 Unix-like 系统的 shell.
+** 为什么选择 ~zsh~
++ 扩展性强，有很多插件
++ 对 ~bash~ 的兼容很好
++ 符合 posix 标准
+** 配置方法
+无论你是自己维护自己的配置还是使用别人的配置，插件是必不可少的，很多插件你都
+可以在 ~github~ 找到。
+
+* 基础配置
+** Basic
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+setopt autocd           # Automatically cd into typed directory.
+stty stop undef         # Disable ctrl-s to freeze terminal.
+setopt interactive_comments
+_comp_options+=(globdots)           # Include hidden files.
+#+end_src
+** Alias
+*** alias for ls
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+alias \
+    ls="ls --color=auto" \
+    ll="ls --color=auto -lh" \
+    l="ls --color=auto  -Alh"
+#+end_src
+*** alias for pacman
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+alias \
+    p="sudo pacman" \
+    pacman="sudo pacman" \
+    pS="sudo pacman -S" \
+    pSs="/usr/bin/pacman -Ss" \
+    pSyyu="sudo pacman -Syyu" \
+    pSyu="sudo pacman -Syu" \
+    pRns="sudo pacman -Rns"
+alias \
+    y="yay" \
+    yS="yay -S" \
+    ySs="yay -Ss" \
+    ySyu="yay -Syu" \
+    ySyyu="yay -Syyu" \
+    ySc="yay -Sc"
+#+end_src
+*** alias for git
+但是现在我主要用的事 ~magit~
+#+begin_src sh :tangle ~/.config/zsh/.zshrc
+alias \
+    g="git" \
+    gcm="git commit" \
+    gcl="git clone" \
+#+end_src
+*** alias for system info
+#+begin_src sh :tangle ~/.config/zsh/.zshrc
+alias distro="cat /etc/*-release"
+#+end_src
+*** alias for youtube-dl
+#+begin_src sh :tangle ~/.config/zsh/.zshrc
+alias yta='youtube-dl -f "bestaudio" --continue --no-overwrites --ignore-errors --extract-audio --audio-format mp3 -o "%(title)s.%(ext)s"'
+alias yt='youtube-dl'
+#+end_src
+** 补全设置
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+autoload -U compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' use-cache on
+zstyle ':completion:*' cache-path ~/.zsh/cache
+zstyle ':completion:*' completer _complete _match _approximate
+zstyle ':completion:*:match:*' original only
+zstyle ':completion:*:approximate:*' max-errors 1 numeric
+zstyle ':completion:*:functions' ignored-patterns '_*'
+zstyle ':completion:*:*:kill:*' menu yes select
+zstyle ':completion:*:kill:*'   force-list always
+zstyle ':completion:*' squeeze-slashes true
+zstyle ':completion:*:cd:*' ignore-parents parent pwd
+zstyle ':completion:*' rehash true
+zstyle ':prompt:pure:prompt:*' color cyan
+zstyle :prompt:pure:path color yellow
+zmodload zsh/complist
+compinit
+zstyle -e ':completion:*:approximate:*' \
+        max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3))numeric)'
+#+end_src
+** Vi Mode
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+bindkey -v
+export KEYTIMEOUT=1
+
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select () {
+    case $KEYMAP in
+        vicmd) echo -ne '\e[1 q';;      # block
+        viins|main) echo -ne '\e[5 q';; # beam
+    esac
+}
+zle -N zle-keymap-select
+zle-line-init() {
+    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    echo -ne "\e[5 q"
+}
+zle -N zle-line-init
+echo -ne '\e[5 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+#+end_src
+** ~..~ 上一级目录
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+rationalise-dot() {
+  if [[ $LBUFFER = *.. ]]; then
+    LBUFFER+=/..
+  else
+    LBUFFER+=.
+  fi
+}
+zle -N rationalise-dot
+bindkey . rationalise-dot
+#+end_src
+
+** ~Ctrl-d~ 退出 zsh
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+exit_zsh() { exit }
+zle -N exit_zsh
+bindkey '^D' exit_zsh
+#+end_src
+** mkdir && cd
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+function mkcd() {
+    mkdir $1
+    cd $1
+}
+#+end_src
+
+* 扩展
+** 加载插件
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+. /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/share/fzf/key-bindings.zsh
+autoload -U colors && colors	# Load colors
+autoload -U promptinit; promptinit # Load prompts
+#+end_src
+** 主题
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+prompt pure
+#+end_src
+** fzf
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+bindkey -s '^f' 'cd "$(dirname "$(fzf)")"\n'
+#+end_src
+** 语法高亮
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+source /usr/share/doc/pkgfile/command-not-found.zsh
+#+end_src
+** vterm
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+vterm_printf(){
+    if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ] ); then
+        # Tell tmux to pass the escape sequences through
+        printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+    elif [ "${TERM%%-*}" = "screen" ]; then
+        # GNU screen (screen, screen-256color, screen-256color-bce)
+        printf "\eP\e]%s\007\e\\" "$1"
+    else
+        printf "\e]%s\e\\" "$1"
+    fi
+}
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+fi
+if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+    alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+fi
+vterm_cmd() {
+    local vterm_elisp;
+    vterm_elisp=""
+    while [ $# -gt 0 ]; do
+        vterm_elisp="$vterm_elisp""$(printf '"%s" ' "$(printf "%s" "$1" | sed -e 's|\\|\\\\|g' -e 's|"|\\"|g')")"
+        shift
+    done
+    vterm_printf "51;E$vterm_elisp"
+}
+autoload -U add-zsh-hook
+add-zsh-hook -Uz chpwd (){
+    vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+}
+#+end_src
+** auto-suggestion
+#+begin_src shell :tangle ~/.config/zsh/.zshrc
+bindkey '^ ' autosuggest-accept
+#+end_src

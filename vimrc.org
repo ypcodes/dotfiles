@@ -1,0 +1,54 @@
+#+TITLE: Vim And NeoVim Configuration
+#+property: header-args:vimrc :tangle ~/.vimrc
+#+property: header-args:vimrc :tangle ~/.config/nvim/init.vim
+
+* 目录 :toc:noexport:
+- [[#插件][插件]]
+  - [[#插件管理器][插件管理器]]
+  - [[#插件安装][插件安装]]
+- [[#设置][设置]]
+
+* 插件
+** 插件管理器
+#+begin_src sh
+# vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# nvim
+sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
+       https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
+#+end_src
+** 插件安装
+#+begin_src vimrc
+" Specify a directory for plugins
+" - For Neovim: stdpath('data') . '/plugged'
+" - Avoid using standard Vim directory names like 'plugin'
+call plug#begin('~/.cache/vim/plugged')
+Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Multiple Plug commands can be written in a single line using | separators
+Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+
+" Using a tagged release; wildcard allowed (requires git 1.9.2 or above)
+Plug 'fatih/vim-go', { 'tag': '*' }
+
+" Plugin options
+Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Initialize plugin system
+call plug#end()
+#+end_src
+* 设置
+#+begin_src vimrc
+set number relativenumber
+syntax on
+filetype on
+#+end_src
