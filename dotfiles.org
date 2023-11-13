@@ -111,15 +111,22 @@
   alias open=explorer
 
 #+end_src
+*** Prettier ls
+#+begin_src sh
+  if (( $+commands[gls] )); then
+      alias ls='gls --color=tty --group-directories-first'
+  else
+      alias ls='ls --color=tty --group-directories-first'
+  fi
+
+#+end_src
 *** Alias for ls
 #+begin_src sh
   alias \
-      ls="ls --color=auto" \
-      ll="ls --color=auto -lh" \
-      l="ls --color=auto  -Alh"
-  if (( $+commands[eza] )) ; then
-      alias ls='eza --color=auto --group-directories-first'; alias la='ls -laFh'
-  fi
+      ls="exa --icons --group-directories-first" \
+      ll="exa --icons -lh --group-directories-first" \
+      l="ls --icons  -Alh"
+  alias la='exa --icons -laFh'
 
 #+end_src
 *** Alias for Emacs
@@ -224,29 +231,12 @@
   # Git UI
   zinit ice wait lucid as"null" from"gh-r" sbin"**/gitui"
   zinit light extrawurst/gitui
-
-  # Prettify ls
-  if (( $+commands[gls] )); then
-      alias ls='gls --color=tty --group-directories-first'
-  else
-      alias ls='ls --color=tty --group-directories-first'
-  fi
-
 #+end_src
 **** Git UI
 #+begin_src sh
   # Git UI
   zinit ice wait lucid as"null" from"gh-r" sbin"**/gitui"
   zinit light extrawurst/gitui
-#+end_src
-*** Prettier ls
-#+begin_src sh
-  if (( $+commands[gls] )); then
-      alias ls='gls --color=tty --group-directories-first'
-  else
-      alias ls='ls --color=tty --group-directories-first'
-  fi
-
 #+end_src
 *** Preview
 **** kill and ps
