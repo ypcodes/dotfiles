@@ -15,17 +15,24 @@
 :END:
 ** Install require packages
 #+begin_src sh
+  echo "installing needed packages..."
   sudo pacman -S zsh zsh-syntax-highlighting zsh-autosuggestions pkgfile --needed
-  sudo pacman -S fzf fzf-tab exa zinit --needed
-  sudo pacman -S vim-plug
+  sudo pacman -S fzf  --needed
+  sudo pacman -S vim-plug --needed
+  yay -S zsh-pure-prompt zinit exa fzf-tab-git --needed
+  echo "updating pkgfiles"
   sudo pkgfile --update
-  yay -S zsh-pure-prompt --needed
 #+end_src
 ** Emacs configuration
 #+begin_src sh 
   git clone  --recurse-submodules git@github.com:ypcodes/geistemacs ~/.config/emacs
   cd ~/.config/emacs
   make build
+#+end_src
+
+** Prompt
+#+begin_src sh
+  echo "please run install.sh"
 #+end_src
 
 * ZSH 
