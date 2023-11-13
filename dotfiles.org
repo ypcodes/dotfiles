@@ -610,6 +610,11 @@ Plug 'Shougo/neosnippet.vim'
 " 代码格式化
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
+
+" orgmode
+Plug 'jceb/vim-orgmode'
+
+Plug 'tpope/vim-speeddating'
 call plug#end()
 
 
