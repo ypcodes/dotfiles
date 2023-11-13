@@ -1,0 +1,36 @@
+#+title: Peng's Configuration
+#+author: 叶蓬
+#+language: zh-hans
+* Introduction
+首先安装 ~emacs~, 然后运行:
+#+begin_src sh
+emacs --batch -l org dotfiles.org -f org-babel-tangle
+#+end_src
+
+* Shell
+** Install
+#+begin_src sh
+  sudo pacman -S zsh zsh-syntax-highlighting
+#+end_src
+** =Dotfiles= from 
+:PROPERTIES:
+:var:      url="https://gh-proxy.com/github.com/seagle0128/dotfiles/raw/master/install.sh"
+:results:  output
+:END:
+#+begin_src sh
+  sh -c "$(curl -fsSL $url)"
+#+end_src
+
+
+* Emacs configuration
+:PROPERTIES:
+:var:      repo="git@github.com:ypcodes/geistemacs"
+:results:  output
+:END:
+
+#+begin_src sh
+  git clone  --recurse-submodules $repo ~/.config/emacs
+  cd ~/.config/emacs
+  make build
+#+end_src
+
