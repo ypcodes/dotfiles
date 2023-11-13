@@ -17,6 +17,7 @@
 #+begin_src sh
   sudo pacman -S zsh zsh-syntax-highlighting zsh-autosuggestions pkgfile --needed
   sudo pacman -S fzf fzf-tab exa zinit --needed
+  sudo pacman -S vim-plug
   sudo pkgfile --update
   yay -S zsh-pure-prompt --needed
 #+end_src
@@ -520,16 +521,123 @@
   set smarttab
   set softtabstop=4
   set showmatch
-  set incsearch
-  set hlsearch
   set ignorecase
-  set smartcase
   set scrolloff=8
   set colorcolumn=80
   set cursorcolumn
   set laststatus=2
-  set wildmenu
   set wildmode=longest,list
   set listchars=tab:▸\ ,trail:·,extends:>,precedes:<
-  syntax filetype on
+  syntax on
+  colorscheme dracula
+ set nocompatible
+set encoding=utf-8
+set fileencodings=utf-8,gbk,latin1
+set fileformat=unix
+set nobackup
+set nowritebackup
+set noswapfile
+set undodir=~/.vim/undo
+set undofile
+set history=1000
+set ruler
+set number
+set showcmd
+set showmode
+set autoindent
+set smartindent
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set expandtab
+set hlsearch
+set incsearch
+set ignorecase
+set smartcase
+set cursorline
+set cursorcolumn
+set mouse=a
+set scrolloff=8
+set splitright
+set splitbelow
+set statusline=%f%m%r%h%w%=%b%n
+set laststatus=2
+set wildmenu
+set wildignore+=*.o,*.obj,*.a,*.so,*.class,*.pyc,*.swp,*.bak
+set wildignore+=*~,*.tmp
+set wildignore+=tags,tags.orig,tags.old,tags.bak
+set wildignore+=*.git,*.svn,*.hg,*.bzr
+
+" 编码
+autocmd BufReadPost *.py setlocal fileencoding=utf-8
+autocmd BufReadPost *.js setlocal fileencoding=utf-8
+autocmd BufReadPost *.html setlocal fileencoding=utf-8
+autocmd BufReadPost *.css setlocal fileencoding=utf-8
+
+" 代码折叠
+set foldmethod=marker
+set foldlevelstart=99
+ 
+call plug#begin('~/.vim/plugged')
+
+" Make sure you use single quotes
+ Plug 'junegunn/seoul256.vim'
+ Plug 'junegunn/vim-easy-align'
+
+" Group dependencies, vim-snippets depends on ultisnips
+ Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
+
+" On-demand loading
+ Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+ Plug 'tpope/vim-fireplace', { 'for': 'clojure' }
+
+" Using git URL
+ Plug 'https://github.com/junegunn/vim-github-dashboard.git'
+
+" Plugin options
+ Plug 'nsf/gocode', { 'tag': 'v.20150303', 'rtp': 'vim' }
+
+" Plugin outside ~/.vim/plugged with post-update hook
+ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': 'yes \| ./install' }
+  
+Plug 'Shougo/deoplete.nvim'
+Plug 'roxma/nvim-yarp'
+Plug 'roxma/vim-hug-neovim-rpc'
+Plug 'honza/vim-snippets'
+Plug 'Shougo/neosnippet.vim' 
+
+  
+" 代码格式化
+Plug 'scrooloose/nerdtree'
+Plug 'vim-airline/vim-airline'
+call plug#end()
+
+
+" 代码补全
+" Plugin key-mappings.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+"imap <expr><TAB>
+" \ pumvisible() ? "\<C-n>" :
+" \ neosnippet#expandable_or_jumpable() ?
+" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+
+let g:neosnippet_enable_snipmate=1
+let g:neosnippet_snippets_directory="$HOME/.vim/snippets"
+
+" 代码格式化
+let g:airline_powerline_fonts=1
+
 #+end_src
