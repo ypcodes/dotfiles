@@ -1,36 +1,256 @@
 #+title: Peng's Configuration
 #+author: 叶蓬
 #+language: zh-hans
+
 * Introduction
 首先安装 ~emacs~, 然后运行:
-#+begin_src sh
+#+begin_src sh :export no
 emacs --batch -l org dotfiles.org -f org-babel-tangle
 #+end_src
 
-* Shell
-** Install
-#+begin_src sh
-  sudo pacman -S zsh zsh-syntax-highlighting
-#+end_src
-** =Dotfiles= from 
+* Install
 :PROPERTIES:
-:var:      url="https://gh-proxy.com/github.com/seagle0128/dotfiles/raw/master/install.sh"
-:results:  output
+:tangle:   ./install.sh
 :END:
-#+begin_src sh
-  sh -c "$(curl -fsSL $url)"
+** Install require packages
+#+begin_src sh :tangle ./install.sh
+  sudo pacman -S zsh zsh-syntax-highlighting zsh-autosuggestions pkgfile --needed
+  sudo pacman -S fzf fzf-tab exa --needed
+  sudo pkgfile --update
+  yay -S zsh-pure-prompt --needed
 #+end_src
-
-
-* Emacs configuration
-:PROPERTIES:
-:var:      repo="git@github.com:ypcodes/geistemacs"
-:results:  output
-:END:
-
-#+begin_src sh
-  git clone  --recurse-submodules $repo ~/.config/emacs
+** Emacs configuration
+#+begin_src sh 
+  git clone  --recurse-submodules git@github.com:ypcodes/geistemacs ~/.config/emacs
   cd ~/.config/emacs
   make build
 #+end_src
 
+* ZSH 
+:PROPERTIES:
+:tangle:   ~/.zshrc
+:END:
+** Basic
+#+begin_src sh
+  setopt autocd           # Automatically cd into typed directory.
+  stty stop undef         # Disable ctrl-s to freeze terminal.
+  setopt interactive_comments
+  _comp_options+=(globdots)           # Include hidden files.
+#+end_src
+** ENV
+#+begin_src sh
+  # Env
+  export EDITOR=vim
+  export PROXY=http://127.0.0.1:7890
+  # PROXY2=http://127.0.0.1:8123
+
+  export http_proxy=$PROXY && export https_proxy=$PROXY && pgrep clash >> /dev/null || run clash &
+  export DISPLAY=$(grep nameserver /etc/resolv.conf | awk '{print $2}'):0.0
+  export PULSE_SERVER=tcp:$(grep nameserver /etc/resolv.conf | awk '{print $2}');
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+  export LANG=zh_CN.UTF-8
+
+  # fcitx
+  export GTK_IM_MODULE=fcitx
+  export QT_IM_MODULE=fcitx
+  export XMODIFIERS=@im=fcitx
+  export DefaultIMModule=fcitx
+  pgrep fcitx >> /dev/null || fcitx-autostart >>/dev/null &
+#+end_src
+** Alias
+*** Setup for wsl
+#+begin_src sh 
+
+   # Aliases
+   # alias flush_dns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
+   alias explorer=/mnt/c/WINDOWS/explorer.exe \
+         pwsh=/mnt/d/scoop/shims/pwsh.exe \
+         pwsh.exe=/mnt/d/scoop/shims/pwsh.exe \
+         powershell.exe=/mnt/d/scoop/shims/pwsh.exe \
+         wt=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/wt.exe \
+         wsl=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/wsl.EXE \
+         clip=/mnt/c/Windows/System32/clip.exe \
+         winget=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/winget.EXE \
+         scoop="pwsh -Command scoop" \
+         code="/mnt/c/Users/yepen/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code"
+
+   alias open=explorer
+
+#+end_src
+*** Alias for ls
+#+begin_src sh
+  alias \
+      ls="ls --color=auto" \
+      ll="ls --color=auto -lh" \
+      l="ls --color=auto  -Alh"
+#+end_src
+*** Alias for Emacs
+#+begin_src sh
+  alias e="emacsclient -nc"
+#+end_src
+*** Alias for Pacman
+#+begin_src sh
+  alias \
+      p="sudo pacman" \
+      pacman="sudo pacman" \
+      pS="sudo pacman -S" \
+      pSs="/usr/bin/pacman -Ss" \
+      pSyyu="sudo pacman -Syyu" \
+      pSyu="sudo pacman -Syu" \
+      pRns="sudo pacman -Rns"
+  alias \
+      y="yay" \
+      yS="yay -S" \
+      ySs="yay -Ss" \
+      ySyu="yay -Syu" \
+      ySyyu="yay -Syyu" \
+      ySc="yay -Sc"
+#+end_src
+** Complete
+#+begin_src sh
+  autoload -U compinit
+  zstyle ':completion:*' menu select
+  zstyle ':completion:*' use-cache on
+  zstyle ':completion:*' cache-path ~/.zsh/cache
+  zstyle ':completion:*' completer _complete _match _approximate
+  zstyle ':completion:*:match:*' original only
+  zstyle ':completion:*:approximate:*' max-errors 1 numeric
+  zstyle ':completion:*:functions' ignored-patterns '_*'
+  zstyle ':completion:*:*:kill:*' menu yes select
+  zstyle ':completion:*:kill:*'   force-list always
+  zstyle ':completion:*' squeeze-slashes true
+  zstyle ':completion:*:cd:*' ignore-parents parent pwd
+  zstyle ':completion:*' rehash true
+  zstyle ':prompt:pure:prompt:*' color cyan
+  zstyle :prompt:pure:path color yellow
+  zmodload zsh/complist
+  compinit
+  zstyle -e ':completion:*:approximate:*' \
+          max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3))numeric)'
+
+  # disable sort when completing `git checkout`
+  zstyle ':completion:*:git-checkout:*' sort false
+  # set descriptions format to enable group support
+  zstyle ':completion:*:descriptions' format '[%d]'
+  # set list-colors to enable filename colorizing
+  zstyle ':completion:*' list-colors ${(s.:.)LS_COLORS}
+  # preview directory's content with exa when completing cd
+  zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
+  # switch group using `,` and `.`
+  zstyle ':fzf-tab:*' switch-group ',' '.'
+#+end_src
+** Misc
+*** Distro
+#+begin_src sh
+  alias distro="cat /etc/*-release"
+#+end_src
+*** =..= command
+#+begin_src sh
+  rationalise-dot() {
+      if [[ $LBUFFER = *.. ]]; then
+          LBUFFER+=/..
+      else
+          LBUFFER+=.
+      fi
+  }
+  zle -N rationalise-dot
+  bindkey . rationalise-dot
+#+end_src
+** Functions
+#+begin_src sh
+  run ()
+  {
+      nohup "${@}" >> /dev/null &
+  }
+
+  notify-send() { wsl-notify-send.exe --category $WSL_DISTRO_NAME "${@}"; }
+
+  function scoop() {
+      pwsh.exe -noprofile -ex unrestricted -file "D:\scoop\apps\scoop\current\bin\scoop.ps1"  "$@"
+  }
+  function upgrade() {
+      echo ":: Checking Arch Linux PGP Keyring..."
+      local installedver="$(sudo pacman -Qi archlinux-keyring | grep -Po '(?<=Version         : ).*')"
+      local currentver="$(sudo pacman -Si archlinux-keyring | grep -Po '(?<=Version         : ).*')"
+      if [ $installedver != $currentver ]; then
+          echo " Arch Linux PGP Keyring is out of date."
+          echo " Updating before full system upgrade."
+          sudo pacman -Sy --needed --noconfirm archlinux-keyring
+      else
+          echo " Arch Linux PGP Keyring is up to date."
+          echo " Proceeding with full system upgrade."
+      fi
+      if (( $+commands[yay] )); then
+          yay -Syu
+      elif (( $+commands[trizen] )); then
+          trizen -Syu
+      elif (( $+commands[pacaur] )); then
+          pacaur -Syu
+      elif (( $+commands[aura] )); then
+          sudo aura -Syu
+      else
+          sudo pacman -Syu
+      fi
+  }
+#+end_src
+** Cursor set to bar
+#+begin_src sh
+  # Change cursor shape for different vi modes.
+  zle-keymap-select {
+      echo -ne '\e[5 q'
+  }
+  zle -N zle-keymap-select
+
+  # Start with beam shape cursor on zsh startup and after every command.
+  zle-line-init() { zle-keymap-select 'beam'}
+
+  alias vim="echo -ne '\e[1 q';vim"
+#+end_src
+** Plugins
+*** Syntax highlight and auto suggestion
+#+begin_src sh
+  . /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+  source /usr/share/fzf/key-bindings.zsh
+  source /usr/share/zsh/plugins/syntax-highlighting/syntax-highlighting.plugin.zsh
+  source /usr/share/doc/pkgfile/command-not-found.zsh
+#+end_src
+*** theme
+#+begin_src sh
+  autoload -U colors && colors	# Load colors
+  autoload -U promptinit; promptinit # Load prompts
+  prompt pure
+#+end_src
+** Vterm
+#+begin_src sh
+  vterm_printf(){
+      if [ -n "$TMUX" ] && ([ "${TERM%%-*}" = "tmux" ] || [ "${TERM%%-*}" = "screen" ] ); then
+          # Tell tmux to pass the escape sequences through
+          printf "\ePtmux;\e\e]%s\007\e\\" "$1"
+      elif [ "${TERM%%-*}" = "screen" ]; then
+          # GNU screen (screen, screen-256color, screen-256color-bce)
+          printf "\eP\e]%s\007\e\\" "$1"
+      else
+          printf "\e]%s\e\\" "$1"
+      fi
+  }
+  if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+      alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+  fi
+  if [[ "$INSIDE_EMACS" = 'vterm' ]]; then
+      alias clear='vterm_printf "51;Evterm-clear-scrollback";tput clear'
+  fi
+  vterm_cmd() {
+      local vterm_elisp;
+      vterm_elisp=""
+      while [ $# -gt 0 ]; do
+          vterm_elisp="$vterm_elisp""$(printf '"%s" ' "$(printf "%s" "$1" | sed -e 's|\\|\\\\|g' -e 's|"|\\"|g')")"
+          shift
+      done
+      vterm_printf "51;E$vterm_elisp"
+  }
+  autoload -U add-zsh-hook
+  add-zsh-hook -Uz chpwd (){
+      vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
+  }
+#+end_src
