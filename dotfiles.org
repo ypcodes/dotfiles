@@ -10,10 +10,10 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
 
 * Install
 :PROPERTIES:
-:tangle:   ./install.sh
+:header-args: :tangle   ~/install.sh
 :END:
 ** Install require packages
-#+begin_src sh :tangle ./install.sh
+#+begin_src sh
   sudo pacman -S zsh zsh-syntax-highlighting zsh-autosuggestions pkgfile --needed
   sudo pacman -S fzf fzf-tab exa zinit --needed
   sudo pkgfile --update
@@ -28,7 +28,7 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
 
 * ZSH 
 :PROPERTIES:
-:tangle:   ~/.zshrc
+:header-args: :tangle   ~/.zshrc
 :END:
 ** Basic
 #+begin_src sh
@@ -79,7 +79,6 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
   export http_proxy=$PROXY && export https_proxy=$PROXY && pgrep clash >> /dev/null || run clash &
   export DISPLAY=$(grep nameserver /etc/resolv.conf | awk '{print $2}'):0.0
   export PULSE_SERVER=tcp:$(grep nameserver /etc/resolv.conf | awk '{print $2}');
-  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
   export LANG=zh_CN.UTF-8
 
@@ -182,14 +181,12 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
   zinit wait lucid depth"1" for \
         atinit"ZINIT[COMPINIT_OPTS]=-C; zicompinit; zicdreplay" \
         blockf \
-        zsh-users/zsh-completions \
-        atload"!_zsh_autosuggest_start" \
-        zsh-users/zsh-autosuggestions
+        zsh-users/zsh-completions
 
   zinit wait lucid light-mode depth"1" for \
-        zsh-users/zsh-history-substring-search \
-        hlissner/zsh-autopair \
-        agkozak/zsh-z
+        zsh-users/zsh-history-substring-search
+
+  zinit load agkozak/zsh-z
 
   if [[ $OSTYPE != linux* && $CPUTYPE != aarch* ]]; then
       zinit ice wait lucid from"gh-r" as"program"
@@ -420,9 +417,10 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
 ** Cursor set to bar
 #+begin_src sh
   # Change cursor shape for different vi modes.
-  zle-keymap-select {
+ function zle-keymap-select {
       echo -ne '\e[5 q'
   }
+  
   zle -N zle-keymap-select
 
   # Start with beam shape cursor on zsh startup and after every command.
@@ -433,9 +431,9 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
 ** Plugins
 *** Syntax highlight and auto suggestion
 #+begin_src sh
-  . /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+  source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
   source /usr/share/fzf/key-bindings.zsh
-  source /usr/share/zsh/plugins/syntax-highlighting/syntax-highlighting.plugin.zsh
+  source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
   source /usr/share/doc/pkgfile/command-not-found.zsh
 #+end_src
 *** theme
