@@ -11,7 +11,7 @@
 
 * Install
 :PROPERTIES:
-:header-args: :tangle   ~/install.sh
+:header-args: :tangle install.sh
 :END:
 ** Install require packages
 #+begin_src sh
