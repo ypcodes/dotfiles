@@ -1,11 +1,12 @@
 #+title: Peng's Configuration
 #+author: 叶蓬
 #+language: zh-hans
+#+startup: overview
 
 * Introduction
 首先安装 ~emacs~, 然后运行:
 #+begin_src sh :export no
-emacs --batch -l org dotfiles.org -f org-babel-tangle
+  emacs --batch -l org dotfiles.org -f org-babel-tangle
 #+end_src
 
 * Install
@@ -93,20 +94,20 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
 *** Setup for wsl
 #+begin_src sh 
 
-   # Aliases
-   # alias flush_dns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
-   alias explorer=/mnt/c/WINDOWS/explorer.exe \
-         pwsh=/mnt/d/scoop/shims/pwsh.exe \
-         pwsh.exe=/mnt/d/scoop/shims/pwsh.exe \
-         powershell.exe=/mnt/d/scoop/shims/pwsh.exe \
-         wt=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/wt.exe \
-         wsl=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/wsl.EXE \
-         clip=/mnt/c/Windows/System32/clip.exe \
-         winget=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/winget.EXE \
-         scoop="pwsh -Command scoop" \
-         code="/mnt/c/Users/yepen/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code"
+  # Aliases
+  # alias flush_dns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
+  alias explorer=/mnt/c/WINDOWS/explorer.exe \
+        pwsh=/mnt/d/scoop/shims/pwsh.exe \
+        pwsh.exe=/mnt/d/scoop/shims/pwsh.exe \
+        powershell.exe=/mnt/d/scoop/shims/pwsh.exe \
+        wt=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/wt.exe \
+        wsl=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/wsl.EXE \
+        clip=/mnt/c/Windows/System32/clip.exe \
+        winget=/mnt/c/Users/yepen/AppData/Local/Microsoft/WindowsApps/winget.EXE \
+        scoop="pwsh -Command scoop" \
+        code="/mnt/c/Users/yepen/AppData/Local/Programs/Microsoft\ VS\ Code/bin/code"
 
-   alias open=explorer
+  alias open=explorer
 
 #+end_src
 *** Alias for ls
@@ -144,7 +145,7 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
 #+end_src
 ** Complete
 *** Basic
-#+begin_src sh
+#+begin_src sh 
   autoload -U compinit
   zstyle ':completion:*' menu select
   zstyle ':completion:*' use-cache on
@@ -163,8 +164,8 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
   zmodload zsh/complist
   compinit
   zstyle -e ':completion:*:approximate:*' \
-          max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3))numeric)'
-
+         max-errors 'reply=($((($#PREFIX+$#SUFFIX)/3))numeric)'
+  source /usr/share/zsh/plugins/fzf-tab-git/fzf-tab.zsh
   # disable sort when completing `git checkout`
   zstyle ':completion:*:git-checkout:*' sort false
   # set descriptions format to enable group support
@@ -174,7 +175,7 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
   # preview directory's content with exa when completing cd
   zstyle ':fzf-tab:complete:cd:*' fzf-preview 'exa -1 --color=always $realpath'
   # switch group using `,` and `.`
-  zstyle ':fzf-tab:*' switch-group ',' '.'
+  zstyle ':fzf-tab:*' switch-group ',' '.' 
 #+end_src
 *** Enhancement
 #+begin_src sh
@@ -417,10 +418,10 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
 ** Cursor set to bar
 #+begin_src sh
   # Change cursor shape for different vi modes.
- function zle-keymap-select {
+  function zle-keymap-select {
       echo -ne '\e[5 q'
   }
-  
+
   zle -N zle-keymap-select
 
   # Start with beam shape cursor on zsh startup and after every command.
@@ -474,4 +475,61 @@ emacs --batch -l org dotfiles.org -f org-babel-tangle
   add-zsh-hook -Uz chpwd (){
       vterm_printf "51;A$(whoami)@$(hostname):$(pwd)"
   }
+#+end_src
+
+* Git
+** Gitconfig
+:PROPERTIES:
+:header-args: :tangle ~/.gitconfig
+:END:
+
+#+begin_src 
+[include]
+	path = ~/.gitconfig_global
+[credential]
+	helper = cache
+[user]
+	name = Peng Ye
+	email = yepeng230@gmail.com
+#+end_src
+** Gititgnore
+:PROPERTIES:
+:header-args: :tangle ~/.gitignorg_global
+:END:
+
+#+begin_src 
+# -*- mode: gitignore -*-
+*~
+.DS_Store
+#+end_src
+* Vim
+:PROPERTIES:
+:header-args: :tangle ~/.vimrc
+:END:
+
+#+begin_src vim
+  set encoding=utf-8
+  set number
+  set relativenumber
+  set cursorline
+  set autoindent
+  set smartindent
+  set tabstop=4
+  set shiftwidth=4
+  set expandtab
+  set smarttab
+  set softtabstop=4
+  set showmatch
+  set incsearch
+  set hlsearch
+  set ignorecase
+  set smartcase
+  set scrolloff=8
+  set colorcolumn=80
+  set cursorcolumn
+  set laststatus=2
+  set wildmenu
+  set wildmode=longest,list
+  set listchars=tab:▸\ ,trail:·,extends:>,precedes:<
+  syntax filetype on
 #+end_src
