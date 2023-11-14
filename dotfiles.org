@@ -35,6 +35,11 @@
   echo "please run install.sh"
 #+end_src
 
+** GDB
+#+begin_src sh
+  yay -S gdb
+  wget -P ~ https://git.io/.gdbinit
+#+end_src
 * ZSH 
 :PROPERTIES:
 :header-args: :tangle   ~/.zshrc
