@@ -37,8 +37,8 @@
 
 ** GDB
 #+begin_src sh
-  yay -S gdb
-  wget -P ~ https://git.io/.gdbinit
+  yay -S gdb --needed
+  [ -e ~/.gdbinit] || wget -P ~ https://git.io/.gdbinit
 #+end_src
 * ZSH 
 :PROPERTIES:
@@ -139,6 +139,8 @@
   export XMODIFIERS=@im=fcitx
   export DefaultIMModule=fcitx
   pgrep fcitx >> /dev/null || fcitx-autostart >>/dev/null &
+
+  run emacs --daemon >> /dev/null &
 #+end_src
 ** Alias
 *** Setup for wsl
@@ -174,7 +176,7 @@
   alias \
       ls="exa --icons --group-directories-first" \
       ll="exa --icons -lh --group-directories-first" \
-      l="ls --icons  -Alh"
+      l="ls --icons  -lh"
   alias la='exa --icons -laFh'
 
 #+end_src
@@ -648,3 +650,4 @@ let g:neosnippet_snippets_directory="$HOME/.vim/snippets"
 let g:airline_powerline_fonts=1
 
 #+end_src
+
