@@ -59,6 +59,43 @@
         zdharma-continuum/zinit-annex-patch-dl
 
 #+end_src
+** Functions
+#+begin_src sh
+  run ()
+  {
+      nohup "${@}" >> /dev/null &
+  }
+
+  notify-send() { wsl-notify-send.exe --category $WSL_DISTRO_NAME "${@}"; }
+
+  function scoop() {
+      pwsh.exe -noprofile -ex unrestricted -file "D:\scoop\apps\scoop\current\bin\scoop.ps1"  "$@"
+  }
+  function upgrade() {
+      echo ":: Checking Arch Linux PGP Keyring..."
+      local installedver="$(sudo pacman -Qi archlinux-keyring | grep -Po '(?<=Version         : ).*')"
+      local currentver="$(sudo pacman -Si archlinux-keyring | grep -Po '(?<=Version         : ).*')"
+      if [ $installedver != $currentver ]; then
+          echo " Arch Linux PGP Keyring is out of date."
+          echo " Updating before full system upgrade."
+          sudo pacman -Sy --needed --noconfirm archlinux-keyring
+      else
+          echo " Arch Linux PGP Keyring is up to date."
+          echo " Proceeding with full system upgrade."
+      fi
+      if (( $+commands[yay] )); then
+          yay -Syu
+      elif (( $+commands[trizen] )); then
+          trizen -Syu
+      elif (( $+commands[pacaur] )); then
+          pacaur -Syu
+      elif (( $+commands[aura] )); then
+          sudo aura -Syu
+      else
+          sudo pacman -Syu
+      fi
+  }
+#+end_src
 ** Oh my zsh
 #+begin_src sh
   # Oh My Zsh
@@ -375,43 +412,6 @@
           zinit snippet OMZP::archlinux
       fi
   fi
-#+end_src
-** Functions
-#+begin_src sh
-  run ()
-  {
-      nohup "${@}" >> /dev/null &
-  }
-
-  notify-send() { wsl-notify-send.exe --category $WSL_DISTRO_NAME "${@}"; }
-
-  function scoop() {
-      pwsh.exe -noprofile -ex unrestricted -file "D:\scoop\apps\scoop\current\bin\scoop.ps1"  "$@"
-  }
-  function upgrade() {
-      echo ":: Checking Arch Linux PGP Keyring..."
-      local installedver="$(sudo pacman -Qi archlinux-keyring | grep -Po '(?<=Version         : ).*')"
-      local currentver="$(sudo pacman -Si archlinux-keyring | grep -Po '(?<=Version         : ).*')"
-      if [ $installedver != $currentver ]; then
-          echo " Arch Linux PGP Keyring is out of date."
-          echo " Updating before full system upgrade."
-          sudo pacman -Sy --needed --noconfirm archlinux-keyring
-      else
-          echo " Arch Linux PGP Keyring is up to date."
-          echo " Proceeding with full system upgrade."
-      fi
-      if (( $+commands[yay] )); then
-          yay -Syu
-      elif (( $+commands[trizen] )); then
-          trizen -Syu
-      elif (( $+commands[pacaur] )); then
-          pacaur -Syu
-      elif (( $+commands[aura] )); then
-          sudo aura -Syu
-      else
-          sudo pacman -Syu
-      fi
-  }
 #+end_src
 ** Cursor set to bar
 #+begin_src sh
