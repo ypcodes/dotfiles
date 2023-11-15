@@ -3,6 +3,30 @@
 #+language: zh-hans
 #+startup: overview
 
+* Table of Contents :toc:noexport:
+- [[#introduction][Introduction]]
+- [[#install][Install]]
+  - [[#install-require-packages][Install require packages]]
+  - [[#emacs-configuration][Emacs configuration]]
+  - [[#prompt][Prompt]]
+  - [[#gdb][GDB]]
+- [[#zsh][ZSH]]
+  - [[#basic][Basic]]
+  - [[#zinit][Zinit]]
+  - [[#functions][Functions]]
+  - [[#oh-my-zsh][Oh my zsh]]
+  - [[#env][ENV]]
+  - [[#alias][Alias]]
+  - [[#complete][Complete]]
+  - [[#misc][Misc]]
+  - [[#cursor-set-to-bar][Cursor set to bar]]
+  - [[#plugins][Plugins]]
+  - [[#vterm][Vterm]]
+- [[#git][Git]]
+  - [[#gitconfig][Gitconfig]]
+  - [[#gititgnore][Gititgnore]]
+- [[#vim][Vim]]
+
 * Introduction
 首先安装 ~emacs~, 然后运行:
 #+begin_src sh :export no
