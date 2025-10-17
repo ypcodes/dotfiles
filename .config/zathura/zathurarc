@@ -1,0 +1,121 @@
+# ==============================================================================
+# Zathura 配置 - 增强版 (Catppuccin Mocha 主题)
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 主题与配色 (Theme & Colors)
+# ------------------------------------------------------------------------------
+# 基础配色
+set default-bg        "#1e1e2e" # Base
+set default-fg        "#cdd6f4" # Text
+
+# 输入栏与补全
+set inputbar-bg       "#181825" # Mantle
+set inputbar-fg       "#f5e0dc" # Rosewater
+set completion-bg     "#11111b" # Crust
+set completion-fg     "#cdd6f4" # Text
+set completion-highlight-bg "#89b4fa" # Blue
+set completion-highlight-fg "#1e1e2e" # Base
+
+# 状态栏
+set statusbar-bg      "#11111b" # Crust
+set statusbar-fg      "#cdd6f4" # Text
+
+# 通知
+set notification-bg   "#1e1e2e" # Base
+set notification-fg   "#f5e0dc" # Rosewater
+set notification-error-bg   "#f38ba8" # Red
+set notification-error-fg   "#1e1e2e" # Base
+set notification-warning-bg "#f9e2af" # Yellow
+set notification-warning-fg "#1e1e2e" # Base
+
+# 索引（目录）
+set index-bg          "#11111b" # Crust
+set index-fg          "#cdd6f4" # Text
+set index-active-bg   "#89b4fa" # Blue
+set index-active-fg   "#1e1e2e" # Base
+
+# 高亮与选择
+set highlight-color         "rgba(166,227,161,0.4)" # Green, with transparency
+set highlight-active-color  "rgba(137,180,250,0.6)" # Blue, with transparency
+set highlight-fg            "rgba(0,0,0,0.8)"      # Dark text for highlights
+set selection-clipboard "clipboard"
+
+# ------------------------------------------------------------------------------
+# 核心功能：反色深色模式 (Recolor for True Dark Mode)
+# ------------------------------------------------------------------------------
+# 启用反色功能，将 PDF 中的亮色背景和暗色文字反转
+set recolor "true"
+# 将文档中的亮色（如白色背景）替换为我们的深色背景
+set recolor-lightcolor "#1e1e2e"
+# 将文档中的暗色（如黑色文字）替换为我们的浅色文字
+set recolor-darkcolor "#cdd6f4"
+# 在反色时尽量保持图片和彩色元素的原始色调
+set recolor-keephue "true"
+
+# ------------------------------------------------------------------------------
+# 界面与布局 (UI & Layout)
+# ------------------------------------------------------------------------------
+# 字体设置 (推荐使用 Nerd Font 以支持更多图标，但 JetBrains Mono 也很棒)
+set font "JetBrains Mono 10"
+
+# 启动时自动适应页面宽度
+set adjust-open "width"
+
+# 始终显示状态栏(s)和命令行(c)
+set guioptions "sc"
+
+# 自定义状态栏格式，提供更丰富的信息
+# %f: 文件名 | %p: 当前页 | %P: 总页数 | %z: 缩放比例 | %s: 状态信息
+set statusbar-format "  %f  [%p/%P] ・ Z:%z%% ・ %s"
+
+# 页面边距
+set page-v-padding 10
+set page-h-padding 10
+
+# ------------------------------------------------------------------------------
+# 导航与交互 (Navigation & Interaction)
+# ------------------------------------------------------------------------------
+# 默认打开文档时跳转到上次阅读的位置
+set open-first-page "false"
+
+# 启用增量搜索 (输入时即时高亮匹配项)
+set incremental-search "true"
+
+# 滚动设置
+set scroll-step 50        # 每次滚动的步长
+set scroll-full-overlap 0.1 # 翻页时保留 10% 的重叠区域，方便衔接
+set scroll-page-aware "true" # 滚动时会智能地在页面边界停顿
+
+# 缩放设置
+set zoom-step 10
+set zoom-min 10
+set zoom-max 1000
+
+# ------------------------------------------------------------------------------
+# 自定义键位绑定 (Custom Keybindings) - 提升效率
+# ------------------------------------------------------------------------------
+# 使用 J/K 进行平滑滚动 (类 Vim)
+map J scroll down
+map K scroll up
+
+# 使用 H/L 切换上一页/下一页
+map H previous_page
+map L next_page
+
+# 使用 Ctrl+J/K 进行半页滚动，用于精细调整
+map <C-j> scroll half-down
+map <C-k> scroll half-up
+
+# 使用 'o' 快速打开新文件
+map o open
+
+# 使用 'za' 快速切换 "适应页面宽度" 和 "适应页面大小" 两种模式
+map za set adjust-open width; set adjust-open best-fit
+
+# ------------------------------------------------------------------------------
+# 高级功能 (Advanced Features)
+# ------------------------------------------------------------------------------
+# (可选) 为 LaTeX 用户启用 SyncTeX 功能。如果不用 LaTeX，可以保持注释。
+set synctex true
+set synctex-editor-command "nvim --headless -c 'e %{input}' -c 'call cursor(%{line}, %{column})'"

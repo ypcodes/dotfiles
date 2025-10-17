@@ -1,0 +1,7 @@
+[Unit]
+Description=Clean user cache directory
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/find /home/peng/.cache/ -mindepth 1 -type f -atime +1 -delete
+ExecStart=/usr/bin/find /home/peng/.cache/ -mindepth 1 -type d -empty -delete

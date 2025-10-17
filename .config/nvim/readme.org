@@ -1,0 +1,41 @@
+#+TITLE: Neovim Configuration for Custom Cursor Shapes
+
+This document outlines the configuration for customizing the cursor shape in Neovim based on the current mode.
+
+* Configuration
+
+The following Lua code is added to `lua/config/autocmds.lua` to control the cursor's appearance.
+
+**Autocommands for Cursor Shape**
+
+This configuration uses autocommands to change the `guicursor` setting upon entering/resuming Neovim and leaving/suspending it.
+
+#+BEGIN_SRC lua
+-- in lua/config/autocmds.lua
+
+vim.api.nvim_create_autocmd({ "VimEnter", "VimResume" }, {
+  pattern = "*",
+  command = "set guicursor=n-v-c:block,i-ci-ve:ver25,r-cr:hor20,o:hor50,a:blinkwait700-blinkoff400-blinkon250-Cursor/lCursor,sm:block-blinkwait175-blinkoff150-blinkon175",
+})
+
+vim.api.nvim_create_autocmd({ "VimLeave", "VimSuspend" }, {
+  pattern = "*",
+  command = "set guicursor=a:ver25",
+})
+#+END_SRC
+
+* Explanation
+
+- *On Enter/Resume*: When Neovim starts or regains focus, it sets specific cursor styles for different modes:
+  - *Normal, Visual, Command-line*: A block cursor.
+  - *Insert, Command-line Insert, Visual Explorer*: A vertical bar (`ver25`).
+  - *Replace, Command-line Replace*: A horizontal bar (`hor20`).
+  - *Operator-pending*: A half-height horizontal bar (`hor50`).
+  - It also defines blinking behavior for the cursor.
+
+- *On Leave/Suspend*: When Neovim is closed or loses focus, the cursor shape is set to a non-blinking vertical bar (`ver25`), which appears as a standard beam/bar in the terminal.
+
+* LazyVim Starter
+
+This is a starter template for [[https://github.com/LazyVim/LazyVim][LazyVim]].
+Refer to the [[https://lazyvim.github.io/installation][documentation]] to get started.

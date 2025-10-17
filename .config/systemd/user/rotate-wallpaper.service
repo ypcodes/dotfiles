@@ -1,0 +1,6 @@
+[Unit]
+Description=Change wallpaper periodically
+
+[Service]
+Type=oneshot
+ExecStart=/home/peng/.config/niri/scripts/rotate-wallpaper-once.sh

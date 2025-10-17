@@ -1,0 +1,8 @@
+[Unit]
+Description=Watch for new files in the main Downloads directory
+
+[Path]
+PathChanged=/home/peng/Downloads
+PathChanged=/home/peng/.local/share/Zen-Browser_Data/Downloads
+PathChanged=/home/peng/下载
+Unit=file-sorter.service

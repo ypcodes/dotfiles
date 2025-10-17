@@ -1,0 +1,6 @@
+[Unit]
+Description=Sort files from download directories
+
+[Service]
+Type=oneshot
+ExecStart=/home/peng/.config/systemd/user/file-sorter.sh

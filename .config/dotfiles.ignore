@@ -1,0 +1,83 @@
+# Ignore patterns for dotfiles repository
+
+# --- User specified ---
+.config/bilibili/
+
+# --- Browser & Electron App Data (often large and not config) ---
+.config/AlgerMusicPlayer/
+.config/Bitwarden/
+.config/calibre/
+.config/cef_user_data/
+.config/Code - OSS/
+.config/crow-translate/
+.config/fluent-reader/
+.config/io.github.clash-verge-rev.clash-verge-rev/
+.config/Kingsoft/
+.config/QQ/
+.config/Software/
+.config/.mozilla/
+.config/obs-studio/
+.config/libreoffice/
+.config/configstore/
+.config/waybar.bak/
+.config/Kvantum/
+.config/clashtui/
+.config/broot/
+
+# --- General Cache & Log Files ---
+**/*Cache*/
+**/Cache/
+**/*cache*/
+**/cache/
+**/*.log
+
+# 系统文件
+.DS_Store
+.AppleDouble
+.LSOverride
+.Spotlight-V100
+.Trashes
+
+# 缓存和临时文件
+*~
+*.tmp
+*.swp
+*.swo
+*.un~
+.cache/
+*.cache
+
+# 应用特定缓存
+.config/*/Cache/
+.config/*/cache/
+.config/Code/User/workspaceStorage/
+.config/Code/User/History/
+
+# 日志文件
+*.log
+.npm/
+.yarn/
+
+# 敏感信息
+.env
+.aws/
+.ssh/
+*.key
+*.pem
+id_rsa*
+id_dsa*
+
+# 大型文件或目录
+node_modules/
+__pycache__/
+*.pyc
+*.class
+
+# 二进制文件
+*.bin
+*.dat
+*.db
+
+# 备份文件
+*.bak
+*.backup

@@ -1,0 +1,6 @@
+[Unit]
+Description=Downloads sorter service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/true

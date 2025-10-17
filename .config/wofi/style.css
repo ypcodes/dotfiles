@@ -1,0 +1,73 @@
+/*
+ * Wofi CSS configuration
+ */
+
+* {
+    font-family: "Hack", "WenQuanYi Micro Hei", monospace;
+    font-size: 16px;
+}
+
+window {
+    background-color: rgba(40, 42, 54, 0.9); /* Dracula background with transparency */
+    border-radius: 15px;
+    border: 2px solid #bd93f9; /* Dracula purple */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+#input {
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #f8f8f2; /* Dracula foreground */
+    background-color: #282a36; /* Dracula background */
+    color: #f8f8f2; /* Dracula foreground */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+#input:focus {
+    outline: none;
+    border-color: #50fa7b; /* Dracula green */
+}
+
+#inner-box {
+    background-color: transparent;
+    margin: 5px;
+}
+
+#outer-box {
+    background-color: transparent;
+    padding: 15px;
+}
+
+#scroll {
+    margin-top: 10px;
+}
+
+#text {
+    padding: 8px;
+    color: #f8f8f2; /* Dracula foreground */
+}
+
+#entry {
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
+}
+
+#entry:nth-child(even){
+    background-color: transparent;
+}
+
+#entry:selected {
+    background-color: #bd93f9; /* Dracula purple */
+    color: #f8f8f2; /* Dracula foreground */
+}
+
+#entry:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#text:selected {
+    color: #282a36; /* Dracula background */
+    background-color: transparent;
+}

@@ -1,0 +1,6 @@
+[Unit]
+Description=Log network downtime
+
+[Service]
+Type=oneshot
+ExecStart=/bin/sh -c 'ping -c 1 -W 5 8.8.8.8 >/dev/null 2>&1 || echo "$(date) - Network is down" >> /home/peng/network-status.log'

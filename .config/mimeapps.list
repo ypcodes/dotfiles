@@ -1,0 +1,20 @@
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop
+application/docx=wps-office-wps.desktop
+x-scheme-handler/clash=clash-verge.desktop
+x-scheme-handler/clash-verge=clash-verge-handler.desktop
+x-scheme-handler/bilipc=bilibili.desktop
+text/plain=emacsclient.desktop
+text/x-python=emacsclient.desktop
+text/x-shellscript=emacsclient.desktop
+text/x-c=emacsclient.desktop
+text/x-c++src=emacsclient.desktop
+text/x-markdown=emacsclient.desktop
+text/x-json=emacsclient.desktop
+application/json=emacsclient.desktop
+application/xml=emacsclient.desktop
+text/x-yaml=emacsclient.desktop
+x-scheme-handler/http=org.mozilla.zen.desktop
+x-scheme-handler/https=org.mozilla.zen.desktop
+text/html=org.mozilla.zen.desktop
+

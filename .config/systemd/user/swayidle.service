@@ -1,0 +1,13 @@
+[Unit]
+Description=Idle management daemon for Wayland (swayidle)
+PartOf=graphical-session.target
+After=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/peng/.config/niri/scripts/start-swayidle.sh
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=graphical-session.target

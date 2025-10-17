@@ -1,0 +1,19 @@
+[Unit]
+Description=Backup projects and dotfiles to Nutstore
+
+
+[Service]
+Type=oneshot
+# 备份 projects 目录
+ExecStart=/usr/bin/rsync -av --delete "/home/peng/projects/" "/home/peng/Nutstore Files/我的坚果云/projects_backup/"
+# 备份 .config 目录下的有用程序配置
+ExecStart=/usr/bin/rsync -av --delete "/home/peng/.config/alacritty/" "/home/peng/Nutstore Files/我的坚果云/config_backup/alacritty/"
+ExecStart=/usr/bin/rsync -av --delete "/home/peng/.config/niri/" "/home/peng/Nutstore Files/我的坚果云/config_backup/niri/"
+ExecStart=/usr/bin/rsync -av --delete "/home/peng/.config/waybar/" "/home/peng/Nutstore Files/我的坚果云/config_backup/waybar/"
+ExecStart=/usr/bin/rsync -av --delete "/home/peng/.config/wofi/" "/home/peng/Nutstore Files/我的坚果云/config_backup/wofi/"
+ExecStart=/usr/bin/rsync -av --delete "/home/peng/.config/zathura/" "/home/peng/Nutstore Files/我的坚果云/config_backup/zathura/"
+ExecStart=/usr/bin/rsync -av --delete "/home/peng/.config/systemd/" "/home/peng/Nutstore Files/我的坚果云/config_backup/systemd/"
+ExecStart=/usr/bin/rsync -av --delete "/home/peng/.config/doom/" "/home/peng/Nutstore Files/我的坚果云/config_backup/doom/"
+
+[Install]
+WantedBy=default.target

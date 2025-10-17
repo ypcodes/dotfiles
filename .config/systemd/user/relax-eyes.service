@@ -1,0 +1,6 @@
+[Unit]
+Description=Send a notification to relax eyes
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/notify-send '放松一下眼睛！' '看看远处，休息一下。'

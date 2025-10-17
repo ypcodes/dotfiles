@@ -1,0 +1,11 @@
+allow_images=true
+hide_scroll=true
+no_actions=false
+term=alacritty
+haligb=fill
+location=center
+drun-display_generic=true
+stylesheet=/home/peng/.config/wofi/style.css
+colors=colors
+mode=drun
+--show

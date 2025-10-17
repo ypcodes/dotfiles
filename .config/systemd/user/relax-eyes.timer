@@ -1,0 +1,10 @@
+[Unit]
+Description=Run relax-eyes.service every 50 minutes
+
+[Timer]
+OnBootSec=5min
+OnUnitActiveSec=50min
+Unit=relax-eyes.service
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,6 @@
+[Unit]
+Description=Backs up .config directory to a Git repository
+
+[Service]
+Type=oneshot
+ExecStart=/home/peng/.config/scripts/dotfiles-backup.sh

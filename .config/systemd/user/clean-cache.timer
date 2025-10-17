@@ -1,0 +1,9 @@
+[Unit]
+Description=Run clean-cache.service weekly
+
+[Timer]
+OnCalendar=weekly
+Persistent=true
+
+[Install]
+WantedBy=timers.target

@@ -1,0 +1,5 @@
+[url "https://gh-proxy.com/github.com/"]
+	insteadOf = https://github.com/
+[user]
+	email = esszp@foxmail.com
+	name = Peng Ye
