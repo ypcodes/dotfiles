@@ -181,7 +181,6 @@ binds {
     spawn-sh-at-startup "wl-paste --watch cliphist store"
     spawn-sh-at-startup "clash-verge"
     spawn-sh-at-startup "exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK"
-
     //spawn-at-startup "~/.config/niri/scripts/battery.sh"
 
     prefer-no-csd // Disable program decorations
