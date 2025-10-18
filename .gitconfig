@@ -3,3 +3,5 @@
 [user]
 	email = esszp@foxmail.com
 	name = Peng Ye
+[push]
+	autoSetupRemote = true
