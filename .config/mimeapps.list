@@ -17,4 +17,5 @@ text/x-yaml=emacsclient.desktop
 x-scheme-handler/http=org.mozilla.zen.desktop
 x-scheme-handler/https=org.mozilla.zen.desktop
 text/html=org.mozilla.zen.desktop
+application/epub+zip=org.pwmt.zathura.desktop
 
