@@ -1,0 +1,8 @@
+[Unit]
+Description=Run a network speed test and log the results
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/env http_proxy= https_proxy= all_proxy= /usr/bin/speedtest-cli --csv --csv-header >> /home/peng/speedtest_results.csv

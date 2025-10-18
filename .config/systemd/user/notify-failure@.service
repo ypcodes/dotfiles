@@ -1,0 +1,6 @@
+[Unit]
+Description=Send notification about a failed service
+
+[Service]
+Type=oneshot
+ExecStart=/home/peng/.config/systemd/user/notify.sh "Service '%i' failed"

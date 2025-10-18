@@ -1,5 +1,7 @@
 [Unit]
 Description=Backup projects and dotfiles to Nutstore
+Wants=network-online.target
+After=network-online.target
 
 
 [Service]

@@ -1,5 +1,7 @@
 [Unit]
 Description=Send a notification to relax eyes
+Wants=graphical-session.target
+After=graphical-session.target
 
 [Service]
 Type=oneshot
