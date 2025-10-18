@@ -54,6 +54,7 @@
 .config/Code/User/History/
 .config/emacs/
 
+.config/vim/plugged/
 # 日志文件
 *.log
 .npm/
