@@ -52,6 +52,7 @@
 .config/*/cache/
 .config/Code/User/workspaceStorage/
 .config/Code/User/History/
+.config/emacs/
 
 # 日志文件
 *.log
