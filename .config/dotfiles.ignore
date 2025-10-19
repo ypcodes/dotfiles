@@ -53,6 +53,8 @@
 .config/Code/User/workspaceStorage/
 .config/Code/User/History/
 .config/emacs/
+.config/fish/fish_variables
+.config/fish/fish_variables*
 
 .config/vim/plugged/
 # 日志文件
