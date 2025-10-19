@@ -1,0 +1,15 @@
+2025/10/19-16:23:12.343 5 Reusing MANIFEST /home/peng/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2025/10/19-16:23:12.360 5 Recovering log #12
+2025/10/19-16:23:12.361 5 Reusing old log /home/peng/.config/chromium/Default/Local Storage/leveldb/000012.log 
+2025/10/19-16:24:12.369 7 Level-0 table #16: started
+2025/10/19-16:24:12.383 7 Level-0 table #16: 196150 bytes OK
+2025/10/19-16:24:12.403 7 Delete type=0 #12
+2025/10/19-16:24:12.404 7 Compacting 4@0 + 1@1 files
+2025/10/19-16:24:12.421 7 Generated table #17@0: 72 keys, 234677 bytes
+2025/10/19-16:24:12.421 7 Compacted 4@0 + 1@1 files => 234677 bytes
+2025/10/19-16:24:12.440 7 compacted to: files[ 0 1 1 0 0 0 0 ]
+2025/10/19-16:24:12.441 7 Delete type=2 #7
+2025/10/19-16:24:12.441 7 Delete type=2 #9
+2025/10/19-16:24:12.441 7 Delete type=2 #11
+2025/10/19-16:24:12.441 7 Delete type=2 #13
+2025/10/19-16:24:12.441 7 Delete type=2 #16
