@@ -53,6 +53,7 @@
 .config/Code/User/workspaceStorage/
 .config/Code/User/History/
 .config/emacs/
+.config/chromium/
 .config/fish/fish_variables
 .config/fish/fish_variables*
 

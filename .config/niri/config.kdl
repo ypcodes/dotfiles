@@ -45,7 +45,7 @@ binds {
     MOD+SHIFT+RETURN                    hotkey-overlay-title="Open Terminal: foot" { spawn-sh "foot"; }
     MOD+SPACE                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi"; }
     MOD+D                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi --show run"; }
-    MOD+B                               hotkey-overlay-title="Open Browser: zen browser" { spawn-sh "zen-browser"; }
+    MOD+B                               hotkey-overlay-title="Open Browser: chromium browser" { spawn-sh "chromium"; }
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
     
     // Please choose your own file manager
@@ -259,7 +259,15 @@ binds {
         match app-id=r#"zen$"# title="^Picture-in-Picture$"
         open-floating true // Always float Firefox PiP windows
     }
+    window-rule {
+        match app-id=r#"firefox$"# title="^Picture-in-Picture$"
+        open-floating true // Always float Firefox PiP windows
+    }
 
+    window-rule {
+        match app-id=r#"chromium$"# title="^Picture-in-Picture$"
+        open-floating true // Always float Firefox PiP windows
+    }
     window-rule {
         geometry-corner-radius 0 // Set every window radius to 20
         clip-to-geometry true
@@ -296,7 +304,7 @@ binds {
         FT2_SUBPIXEL_HINTING "2"
         EDITOR  "emacsclient -c -a ''"
         VISUAL  "$EDITOR"
-        BROWSER "zen"
+        BROWSER "chromium"
         http_proxy "http://127.0.0.1:7897"
         https_proxy "http://127.0.0.1:7897"
     }
