@@ -303,10 +303,11 @@ binds {
         FREETYPE_PROPERTIES "truetype:interpreter-version=40"
         FT2_SUBPIXEL_HINTING "2"
         EDITOR  "emacsclient -c -a ''"
-        VISUAL  "$EDITOR"
+        VISUAL  "less"
         BROWSER "chromium"
         http_proxy "http://127.0.0.1:7897"
         https_proxy "http://127.0.0.1:7897"
+        LESSOPEN    "|lesspipe.sh %s"
     }
 
     hotkey-overlay {
