@@ -54,6 +54,8 @@
 .config/Code/User/History/
 .config/emacs/
 .config/chromium/
+.config/chromium*
+.config/chromium-backup/
 .config/fish/fish_variables
 .config/fish/fish_variables*
 
