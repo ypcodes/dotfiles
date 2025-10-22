@@ -1,2 +1,3 @@
-2025/10/20-19:22:33.307 5 Creating DB /home/peng/.config/BraveSoftware/Brave-Browser/Default/Session Storage since it was missing.
-2025/10/20-19:22:33.391 5 Reusing MANIFEST /home/peng/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
+2025/10/22-22:20:51.814 5 Reusing MANIFEST /home/peng/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
+2025/10/22-22:20:51.823 5 Recovering log #3
+2025/10/22-22:20:51.826 5 Reusing old log /home/peng/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000003.log 

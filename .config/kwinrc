@@ -1,2 +1,16 @@
 [Compositing]
 AllowBlurBehindFullScreen=true
+
+[Desktops]
+Id_1=4a80e8ed-a7c1-4b72-a6fd-ac0adf3ea2fe
+Number=1
+Rows=1
+
+[Tiling]
+padding=4
+
+[Tiling][4a80e8ed-a7c1-4b72-a6fd-ac0adf3ea2fe][7e839c2a-1e01-4922-8f4d-9b5ed70d780e]
+tiles={"layoutDirection":"horizontal","tiles":[{"width":0.25},{"width":0.5},{"width":0.25}]}
+
+[Xwayland]
+Scale=1
