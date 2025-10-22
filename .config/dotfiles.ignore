@@ -60,6 +60,25 @@
 .config/fish/fish_variables*
 
 .config/vim/plugged/
+
+.config/kdeglobals
+.config/plasmarc
+.config/plasmashellrc
+.config/krunnerrc
+.config/ksmserverrc
+.config/kscreenlockerrc
+.config/systemsettingsrc
+.config/kcminputrc
+.config/kwinrc
+.config/kwinrulesrc
+.config/ksplashrc
+.config/kglobalshortcutsrc
+.config/ksmserverrc
+.config/ksplashrc
+.config/gtkrc*
+.config/kde-gtk-configrc
+.config/plasma*rc
+
 # 日志文件
 *.log
 .npm/
