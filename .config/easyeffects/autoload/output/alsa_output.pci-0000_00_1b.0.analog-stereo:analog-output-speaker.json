@@ -1,0 +1,6 @@
+{
+    "device": "alsa_output.pci-0000_00_1b.0.analog-stereo",
+    "device-description": "内置音频 模拟立体声",
+    "device-profile": "analog-output-speaker",
+    "preset-name": "Laptop"
+}
