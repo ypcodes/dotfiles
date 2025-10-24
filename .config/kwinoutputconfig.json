@@ -6,7 +6,7 @@
                 "allowSdrSoftwareBrightness": false,
                 "autoRotation": "InTabletMode",
                 "brightness": 1,
-                "colorPowerTradeoff": "PreferEfficiency",
+                "colorPowerTradeoff": "PreferAccuracy",
                 "colorProfileSource": "sRGB",
                 "connectorName": "eDP-1",
                 "detectedDdcCi": false,
