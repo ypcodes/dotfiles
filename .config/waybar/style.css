@@ -1,8 +1,8 @@
 /* --- Global Settings --- */
 * {
 	border: none;
-	font-family: "0xProto Nerd Font", "Font Awesome 6 Free";
-    font-size: 12px;
+	font-family: "NotoSans Nerd Font Propo", "Font Awesome 6 Free";
+    font-size: 14px;
 }
 
 window#waybar {
@@ -21,7 +21,7 @@ tooltip label {
 }
 
 #clock tooltip label {
-    font-family: "0xProto Nerd Font", "Noto Sans CJK SC", "WenQuanYi Micro Hei";
+    font-family: "monospace", "WenQuanYi Micro Hei";
     font-size: 14px; /* 可以自定义工具提示里的字体大小 */
 }
 /* --- Generic Module Style (The Box) --- */

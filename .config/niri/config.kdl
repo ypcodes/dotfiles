@@ -177,6 +177,7 @@ binds {
     spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
     //spawn-sh-at-startup "swww img /home/peng/Pictures/Wallpapers/wallhaven-l81672.jpg" // Set wallpaper
     spawn-sh-at-startup "waybar" // Launch waybar
+    //spawn-sh-at-startup "dms run" // Launch waybar
     spawn-at-startup "fcitx5 -d"
     spawn-sh-at-startup "wl-paste --watch cliphist store"
     spawn-sh-at-startup "clash-verge"

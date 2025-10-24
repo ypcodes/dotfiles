@@ -5,7 +5,8 @@
         "cpu",
         "memory",
         "tray",
-        "custom/music"
+        "custom/music",
+        "window"
     ],
     "modules-center": [
         "clock"
@@ -147,5 +148,11 @@
         "on-click": "playerctl play-pause",
         "on-scroll-up": "playerctl next",
         "on-scroll-down": "playerctl previous",
+    },
+    "window": {
+        "format": " {window_title}",
+        "interval": 1,
+        "max-length": 50,
+        "tooltip": false
     }
 }
