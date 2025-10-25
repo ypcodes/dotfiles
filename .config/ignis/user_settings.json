@@ -1,1 +1,34 @@
-{}
+{
+    "appearance": {
+        "wallcolors": {
+            "wallpaper_path": "/home/peng/Pictures/Wallpapers/default.png",
+            "auto_dark": {}
+        }
+    },
+    "interface": {
+        "modules": {
+            "location": {},
+            "visibility": {},
+            "bar_id": {},
+            "options": {}
+        },
+        "bar": {
+            "floating": false,
+            "side": "bottom",
+            "vertical": false
+        },
+        "bar2": {
+            "enabled": false,
+            "floating": false,
+            "side": "top",
+            "vertical": false
+        },
+        "notifications": {},
+        "launcher": {},
+        "misc": {}
+    },
+    "services": {
+        "recorder": {},
+        "osd": {}
+    }
+}
