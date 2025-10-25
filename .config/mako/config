@@ -1,12 +1,75 @@
+# ~/.config/mako/config
+# 基本外观和行为（全局）
 max-visible=10
 layer=top
-font="Noto Sans"
+anchor=top-right
+
+# 字体（Pango 描述）
+# 可改为 "Noto Sans 11" / "Noto Sans 12" 等，根据你喜好
+font="Noto Sans 11"
+
+# 颜色（你提供的 Nord 风格配色，带透明度）
 background-color=#4c566add
 text-color=#d8dee9
 border-color=#434c5e
+
+# 大小 / 间距 / 圆角
+border-size=1
 border-radius=7
+# padding=8          # 内边距（便于阅读）
+# margin=0           # 单个通知与屏幕边缘距离（你设为 0）
+# outer-margin=6     # 整个通知列表与屏幕边缘的外边距（可调整）
+# width=360          # 宽度（像素），可根据屏幕/喜好调整
 max-icon-size=48
+
+# 超时时间（毫秒） 10000 = 10s
 default-timeout=10000
-anchor=top-right
-margin=0
-on-notify=exec mpv /usr/share/sounds/ocean/stereo/message-attention.oga
+# 默认为显示通知并保存历史（如果你不需要历史可设置 history=0）
+history=1
+# 在大多数场景下保持 markup=1 以允许富文本（如果你不信任来源可设为 0）
+markup=1
+actions=1
+
+# 隐藏时的占位（当超过 max-visible）
+# 仅改变“隐藏”占位的外观
+[hidden]
+# 更小一点、半透明且无图标
+font="Noto Sans 10"
+background-color=#3b4252c0
+text-color=#d8dee9
+icons=0
+height=36
+padding=6
+border-radius=6
+
+# 针对“组内第一个且 urgency = normal” 的行为：播放提示音
+# 这样可避免每个分组成员都触发声音（例如来自同一 app 的多条通知）
+[group-index=0 urgency=normal]
+on-notify=exec mpv --no-terminal --really-quiet --no-video /usr/share/sounds/ocean/stereo/message-attention.oga
+
+# 对高优先级（critical）也播放提示音并突出显示（颜色可自由调整）
+[group-index=0 urgency=critical]
+on-notify=exec mpv --no-terminal --really-quiet --no-video /usr/share/sounds/ocean/stereo/message-attention.oga
+# 让 critical 更醒目
+background-color=#BF616AFF
+text-color=#FFFFFF
+border-color=#BF616A
+
+# 如果你希望某些 app 不发声音或不显示（举例）
+# 例如屏蔽某个 app（替换 AppName）
+# [app-name=AppName]
+# invisible=1
+
+# 你也可以为“交互式”通知（actionable）定制按钮行为
+# 例如：中键弹出可交互的动作菜单（这里以 makoctl + dmenu 为例）
+# on-button-middle=exec makoctl menu -n "$id" wofi --show=dmenu 'Select action: '
+[app-name=wofi-cmd]
+font="Noto Sans 11"
+background-color=#3b4252cc
+text-color=#ECEFF4
+icon-path=/usr/share/icons/hicolor
+border-radius=8
+padding=8
+# 只针对“Started”通知高亮边框
+[app-name=wofi-cmd summary~="^Started"]
+border-color=#88C0D0
