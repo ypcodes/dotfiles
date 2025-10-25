@@ -1,105 +1,72 @@
-@import url('/home/peng/.cache/wal/colors-waybar.css');
-
-@define-color mauve  @color9;
-@define-color red  @color9;
-@define-color lavender  @color7;
-@define-color text  @color7;
-@keyframes fadeIn {
-    0% {
-    }
-    100% {
-    }
-}
+/*
+ * Wofi CSS configuration
+ */
 
 * {
-    all:unset;
-    font-family: 'CodeNewRoman Nerd Font Mono', monospace;
-    font-size: 18px;
-    outline: none;
-    border: none;
-    text-shadow:none;
-    background-color:transparent;
+    font-family: "Hack", "WenQuanYi Micro Hei", monospace;
+    font-size: 16px;
 }
 
 window {
-    all:unset;
-    padding: 20px;
-    border-radius: 0px;
-    background-color: alpha(@background,.5);
+    background-color: rgba(40, 42, 54, 0.9); /* Dracula background with transparency */
+    border-radius: 15px;
+    border: 2px solid #bd93f9; /* Dracula purple */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
 }
-#inner-box {
-    margin: 2px;
-    padding: 5px
-    border: none;
-}
-#outer-box {    
-    border: none;
-}
-#scroll {
-    margin: 0px;
-    padding: 30px;
-    border: none;
-}
+
 #input {
-    all:unset;
-    margin-left:20px;
-    margin-right:20px;
-    margin-top:20px;
-    padding: 20px;
-    border: none;
-    outline: none;
-    color: @text;
-    box-shadow: 1px 1px 5px rgba(0,0,0, .5);
-    border-radius:10;
-    background-color: alpha(@background,.2);
-}
-#input image {
-    border: none;
-    color: @red;
-    padding-right:10px;
-}
-#input * {
-    border: none;
-    outline: none;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #f8f8f2; /* Dracula foreground */
+    background-color: #282a36; /* Dracula background */
+    color: #f8f8f2; /* Dracula foreground */
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 #input:focus {
     outline: none;
-    border: none;
+    border-color: #50fa7b; /* Dracula green */
+}
 
-    border-radius:10;
-}
-#text {
+#inner-box {
+    background-color: transparent;
     margin: 5px;
-    border: none;
-    color: @text;
-    outline: none;
 }
+
+#outer-box {
+    background-color: transparent;
+    padding: 15px;
+}
+
+#scroll {
+    margin-top: 10px;
+}
+
 #text {
-    margin: 5px;
-    border: none;
-    color: @text;
-    outline: none;
+    padding: 8px;
+    color: #f8f8f2; /* Dracula foreground */
 }
+
 #entry {
-    border: none;
-    margin: 5px;
-    padding: 10px;
+    border-radius: 10px;
+    padding: 5px;
+    transition: all 0.2s ease-in-out;
 }
-#entry arrow {
-    border: none;
-    color: @lavender;
 
+#entry:nth-child(even){
+    background-color: transparent;
 }
+
 #entry:selected {
-    box-shadow: 1px 1px 5px rgba(255,255,255, .03);
-    border: none;
-    border-radius: 20px;
-    background-color:transparent;
+    background-color:  #74c7ec; /* Dracula purple */
 }
-#entry:selected #text {
-    color: @mauve;
+
+#entry:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
-#entry:drop(active) {
-    background-color: @lavender !important;
+
+#text:selected {
+    color: #282a36; /* Dracula background */
+    background-color: transparent;
 }

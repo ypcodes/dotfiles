@@ -287,7 +287,7 @@ binds {
         open-floating true
     }
     window-rule {
-        geometry-corner-radius 10
+        geometry-corner-radius 0
         clip-to-geometry true
     }
 
