@@ -44,7 +44,7 @@ binds {
     MOD+RETURN                          hotkey-overlay-title="Open Terminal: alacritty" { spawn-sh "alacritty"; }
     MOD+SHIFT+RETURN                    hotkey-overlay-title="Open Terminal: foot" { spawn-sh "foot"; }
     MOD+SPACE                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "~/.config/rofi/launchers/type-5/launcher.sh"; }
-    MOD+D                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "~/.local/bin/wofi-run-command"; }
+    MOD+D                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "~/.local/bin/wofi-run-systemd"; }
     MOD+B                               hotkey-overlay-title="Open Browser: chromium browser" { spawn-sh "chromium"; }
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
     
