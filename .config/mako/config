@@ -1,6 +1,6 @@
 max-visible=10
 layer=top
-font=monospace
+font="Noto Sans"
 background-color=#4c566add
 text-color=#d8dee9
 border-color=#434c5e

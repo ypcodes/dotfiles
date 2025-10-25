@@ -2,7 +2,10 @@
     "appearance": {
         "wallcolors": {
             "wallpaper_path": "/home/peng/Pictures/Wallpapers/default.png",
-            "auto_dark": {}
+            "dark_mode": true,
+            "auto_dark": {
+                "enabled": false
+            }
         }
     },
     "interface": {
@@ -10,12 +13,18 @@
             "location": {},
             "visibility": {},
             "bar_id": {},
-            "options": {}
+            "options": {
+                "workspaces_style": "windows"
+            }
         },
         "bar": {
-            "floating": false,
+            "floating": true,
             "side": "bottom",
-            "vertical": false
+            "vertical": false,
+            "density": 1,
+            "separation": false,
+            "centered": false,
+            "bar_background": true
         },
         "bar2": {
             "enabled": false,

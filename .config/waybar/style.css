@@ -1,7 +1,7 @@
 /* --- Global Settings --- */
 * {
 	border: none;
-	font-family: "NotoSans Nerd Font Propo", "Font Awesome 6 Free";
+	font-family:"NotoSans Nerd Font Propo", "Font Awesome 6 Free";
     font-size: 14px;
 }
 
@@ -100,6 +100,9 @@ tooltip label {
     background-color: transparent;
     border: none;
     margin: 6px 0 0 8px;
+    padding-left: 6px;
+    padding-right: 6px;
+
 }
 #workspaces button {
 	padding: 0 8px;

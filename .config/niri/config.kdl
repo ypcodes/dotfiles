@@ -282,11 +282,12 @@ binds {
         default-column-width {proportion 0.5;}
     }
     window-rule {
-        match app-id=r#"^org\.wezfurlong\.wezterm$"#
+        match app-id="wezterm"
         default-column-width {}
+        open-floating true
     }
     window-rule {
-        geometry-corner-radius 0
+        geometry-corner-radius 10
         clip-to-geometry true
     }
 
