@@ -8,7 +8,7 @@
         "custom/music",
     ],
     "modules-center": [
-        "niri/window"
+        "clock"
     ],
     "modules-right": [
         "network",
