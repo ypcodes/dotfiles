@@ -44,7 +44,7 @@ binds {
     MOD+RETURN                          hotkey-overlay-title="Open Terminal: alacritty" { spawn-sh "alacritty"; }
     MOD+SHIFT+RETURN                    hotkey-overlay-title="Open Terminal: foot" { spawn-sh "foot"; }
     MOD+SPACE                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi"; }
-    MOD+D                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "wofi --show run"; }
+    MOD+D                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "~/.local/bin/wofi-run-command"; }
     MOD+B                               hotkey-overlay-title="Open Browser: chromium browser" { spawn-sh "chromium"; }
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
     
@@ -324,6 +324,7 @@ binds {
         http_proxy "http://127.0.0.1:7897"
         https_proxy "http://127.0.0.1:7897"
         LESSOPEN    "|lesspipe.sh %s"
+        LC_ALL      "en_US.utf-8"
         GTK_THEME   "Catppuccin-Macchiato-Standard-Blue-Dark"
         ICON_THEME "Papirus-Dark"
         XCURSOR_THEME "Catppuccin-Macchiato-Dark-Cursors"

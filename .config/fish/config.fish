@@ -27,3 +27,7 @@ function config-git
 end
 
 export LESSOPEN
+
+export LC_ALL="en_US.utf-8"
+
+#export PATH=$PATH:$HOME/.local/bin

@@ -1,72 +1,131 @@
-/*
- * Wofi CSS configuration
- */
+/* === Ultimate Pretty Wofi Style ===
+   Inspired by Catppuccin Macchiato aesthetic
+   Save as ~/.config/wofi/style.css
+*/
 
-* {
-    font-family: "Hack", "WenQuanYi Micro Hei", monospace;
-    font-size: 16px;
-}
+/* Palette (Catppuccin Macchiato) */
+@define-color base       rgba(36, 39, 58, 0.65); /* background blur color */
+@define-color mantle     #1e2030;
+@define-color text       #cad3f5;
+@define-color subtext    #b8c0e0;
+@define-color accent     #8aadf4;
+@define-color accent2    #b7bdf8;
+@define-color border     rgba(255,255,255,0.1);
+@define-color shadow     rgba(0,0,0,0.6);
 
+/* Main window */
 window {
-    background-color: rgba(40, 42, 54, 0.9); /* Dracula background with transparency */
-    border-radius: 15px;
-    border: 2px solid #bd93f9; /* Dracula purple */
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  background-color: @base;
+  backdrop-filter: blur(24px);
+  border-radius: 18px;
+  border: 1px solid @border;
+  box-shadow: 0 10px 40px @shadow;
+  padding: 14px;
+  margin: 16px;
+  min-width: 640px;
+  color: @text;
+  font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
 }
 
-#input {
-    margin: 10px;
-    border-radius: 10px;
-    border: 2px solid #f8f8f2; /* Dracula foreground */
-    background-color: #282a36; /* Dracula background */
-    color: #f8f8f2; /* Dracula foreground */
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+/* Entry field */
+entry {
+  background: rgba(255,255,255,0.06);
+  border-radius: 10px;
+  padding: 10px 14px;
+  margin-bottom: 10px;
+  color: @text;
+  border: 1px solid transparent;
+  transition: border 0.2s ease, background 0.2s ease;
 }
 
-#input:focus {
-    outline: none;
-    border-color: #50fa7b; /* Dracula green */
+entry:focus {
+  border-color: @accent;
+  background: rgba(255,255,255,0.1);
 }
 
-#inner-box {
-    background-color: transparent;
-    margin: 5px;
+/* Placeholder text */
+entry placeholder {
+  color: @subtext;
+  opacity: 0.7;
 }
 
-#outer-box {
-    background-color: transparent;
-    padding: 15px;
+/* List container */
+listview {
+  background: transparent;
+  border-radius: 10px;
+  padding: 6px;
 }
 
-#scroll {
-    margin-top: 10px;
+/* Each result row */
+row {
+  background: transparent;
+  border-radius: 10px;
+  margin: 3px 0;
+  padding: 10px 14px;
+  transition: all 0.15s ease;
+  font-weight: 500;
 }
 
-#text {
-    padding: 8px;
-    color: #f8f8f2; /* Dracula foreground */
+/* Hover effect */
+row:hover {
+  background: rgba(255,255,255,0.07);
+  transform: scale(1.02);
 }
 
-#entry {
-    border-radius: 10px;
-    padding: 5px;
-    transition: all 0.2s ease-in-out;
+/* Selected entry */
+row:selected {
+  background: linear-gradient(90deg, @accent, @accent2);
+  color: #1e2030;
+  font-weight: 600;
+  transform: scale(1.03);
+  box-shadow: 0 0 12px rgba(138,173,244,0.3);
 }
 
-#entry:nth-child(even){
-    background-color: transparent;
+/* Scrollbar */
+scrollbar {
+  background: transparent;
 }
 
-#entry:selected {
-    background-color:  #74c7ec; /* Dracula purple */
+scrollbar slider {
+  background: rgba(255,255,255,0.08);
+  border-radius: 999px;
+  margin: 6px;
 }
 
-#entry:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+scrollbar slider:hover {
+  background: rgba(255,255,255,0.15);
 }
 
-#text:selected {
-    color: #282a36; /* Dracula background */
-    background-color: transparent;
+/* Empty message */
+label#empty {
+  color: @subtext;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Icons */
+image {
+  margin-right: 10px;
+  opacity: 0.9;
+}
+
+/* Keyboard hint labels (right-aligned text) */
+label.hint {
+  color: @subtext;
+  margin-left: auto;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: none; }
+}
+
+window, row {
+  animation: fadeIn 0.2s ease;
 }
