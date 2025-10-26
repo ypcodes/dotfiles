@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="28px" viewBox="0 0 28 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>toolbar_add_template_meeting</title>
+    <defs>
+        <linearGradient x1="74.0356445%" y1="9.5316569%" x2="74.0356445%" y2="78.8431803%" id="linearGradient-1">
+            <stop stop-color="#EB9000" offset="0%"></stop>
+            <stop stop-color="#EB7E00" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="90.5%" y1="0%" x2="9.5%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FFCD00" offset="0%"></stop>
+            <stop stop-color="#FFAB00" offset="99.9313767%"></stop>
+        </linearGradient>
+        <linearGradient x1="20.2636719%" y1="46.71875%" x2="83.1787109%" y2="53.8300781%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFF3E0" offset="47.2922044%"></stop>
+            <stop stop-color="#FFF6D4" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-4" x="9" y="11" width="10" height="2"></rect>
+        <filter x="-15.0%" y="-75.0%" width="130.0%" height="250.0%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.521568627   0 0 0 0 0  0 0 0 0.440067745 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-25.0%" y="-125.0%" width="150.0%" height="350.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="20.2636719%" y1="40.8854167%" x2="83.1787109%" y2="60.6391059%" id="linearGradient-7">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#FFF3E0" offset="47.2922044%"></stop>
+            <stop stop-color="#FFF6D4" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-8" x="9" y="17" width="6" height="2"></rect>
+        <filter x="-25.0%" y="-75.0%" width="150.0%" height="250.0%" filterUnits="objectBoundingBox" id="filter-9">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.921568627   0 0 0 0 0.521568627   0 0 0 0 0  0 0 0 0.440067745 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-41.7%" y="-125.0%" width="183.3%" height="350.0%" filterUnits="objectBoundingBox" id="filter-10">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC/工具栏/插入/会议纪要">
+            <rect id="矩形备份" fill="url(#linearGradient-1)" x="9" y="3" width="10" height="5" rx="1.5"></rect>
+            <rect id="矩形" fill="url(#linearGradient-2)" x="5" y="5" width="18" height="20" rx="1.16666667"></rect>
+            <g id="矩形">
+                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                <use fill="url(#linearGradient-3)" fill-rule="evenodd" xlink:href="#path-4"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-4"></use>
+            </g>
+            <g id="矩形备份-2">
+                <use fill="black" fill-opacity="1" filter="url(#filter-9)" xlink:href="#path-8"></use>
+                <use fill="url(#linearGradient-7)" fill-rule="evenodd" xlink:href="#path-8"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-8"></use>
+            </g>
+        </g>
+    </g>
+</svg>

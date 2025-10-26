@@ -1,0 +1,28 @@
+<svg width="66" height="66" viewBox="0 0 66 66" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="66" height="66" fill="white"/>
+<rect x="11" y="15" width="1" height="3" transform="rotate(90 11 15)" fill="#C2D8FF"/>
+<rect x="11" y="24" width="1" height="3" transform="rotate(90 11 24)" fill="#C2D8FF"/>
+<rect x="11" y="33" width="1" height="3" transform="rotate(90 11 33)" fill="#C2D8FF"/>
+<rect x="11" y="42" width="1" height="3" transform="rotate(90 11 42)" fill="#C2D8FF"/>
+<rect x="20.0084" y="49" width="1" height="4.00834" transform="rotate(90 20.0084 49)" fill="#C2D8FF"/>
+<rect x="32" y="49" width="1" height="4.00834" transform="rotate(90 32 49)" fill="#C2D8FF"/>
+<rect x="44" y="49" width="1" height="4.00834" transform="rotate(90 44 49)" fill="#C2D8FF"/>
+<rect x="56" y="49" width="1" height="4.00834" transform="rotate(90 56 49)" fill="#C2D8FF"/>
+<rect x="14" y="19" width="44" height="0.5" fill="#99BEFF"/>
+<rect x="14" y="28" width="44" height="0.5" fill="#99BEFF"/>
+<rect x="14" y="37" width="44" height="0.5" fill="#99BEFF"/>
+<rect x="14" y="46" width="44" height="0.5" fill="#99BEFF"/>
+<path d="M18 32L30 27L42 37L54 17" stroke="#5C98FF" stroke-linecap="round"/>
+<rect x="17" y="31" width="2" height="2" fill="#175CEB"/>
+<rect x="29" y="26" width="2" height="2" fill="#175CEB"/>
+<rect x="53" y="16" width="2" height="2" fill="#175CEB"/>
+<rect x="41" y="36" width="2" height="2" fill="#175CEB"/>
+<rect x="47.75" y="54" width="5.5" height="29.5" transform="rotate(90 47.75 54)" fill="#F1F4FF" stroke="#99BEFF" stroke-width="0.5"/>
+<rect x="21" y="55.75" width="2" height="2" fill="#5C98FF"/>
+<rect x="24" y="56.25" width="3" height="1" fill="#5C98FF"/>
+<rect x="30" y="55.75" width="2" height="2" fill="#5C98FF"/>
+<rect x="33" y="56.25" width="3" height="1" fill="#5C98FF"/>
+<rect x="39" y="55.75" width="2" height="2" fill="#5C98FF"/>
+<rect x="42" y="56.25" width="3" height="1" fill="#5C98FF"/>
+<path d="M47.5 7.25C47.7761 7.25 48 7.47386 48 7.75L48 10.75C48 11.0261 47.7761 11.25 47.5 11.25L18.5 11.25C18.2239 11.25 18 11.0261 18 10.75L18 7.75C18 7.47386 18.2239 7.25 18.5 7.25L47.5 7.25Z" fill="#C2D8FF"/>
+</svg>

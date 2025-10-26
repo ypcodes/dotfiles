@@ -1,0 +1,28 @@
+"use strict";(self.webpackChunksheet=self.webpackChunksheet||[]).push([["79925"],{978452:function(e,t,a){var n,r,c,i,o,_,d,l,E,u,m,T,s,S,p,C,h,k;a.d(t,{Bc:function(){return E},ER:function(){return r},KM:function(){return c},Sj:function(){return l},dS:function(){return i},eN:function(){return n},l5:function(){return _},mb:function(){return d},oX:function(){return o}}),(u=n||(n={}))[u.VIEW=1]="VIEW",u[u.CUSTOM=2]="CUSTOM",(m=r||(r={}))[m.CATEGORIES_TEXT=1]="CATEGORIES_TEXT",m[m.SERIES_VALUE=2]="SERIES_VALUE",m[m.RECORD=3]="RECORD",(T=c||(c={}))[T.ASCEND=1]="ASCEND",T[T.DESCEND=2]="DESCEND",(s=i||(i={}))[s.TABLE_NOT_EXIST=1]="TABLE_NOT_EXIST",s[s.VIEW_NOT_EXIST=2]="VIEW_NOT_EXIST",s[s.CATEGORIES_INVALID=3]="CATEGORIES_INVALID",s[s.SERIES_INVALID=4]="SERIES_INVALID",s[s.STATISTIC_INVALID=5]="STATISTIC_INVALID",s[s.STATISTIC_NO_RECORD=6]="STATISTIC_NO_RECORD",s[s.FIELD_NOT_EXIST=7]="FIELD_NOT_EXIST",(S=o||(o={}))[S.COLUMN_CHART=13]="COLUMN_CHART",S[S.LINE_CHART=3]="LINE_CHART",S[S.SCATTER_CHART=7]="SCATTER_CHART",S[S.STATISTIC=63]="STATISTIC",S[S.Pie=8]="Pie",S[S.Doughnut=10]="Doughnut",S[S.ClusteredBar=11]="ClusteredBar",S[S.StackedBar=29]="StackedBar",S[S.PercentStackedBar=30]="PercentStackedBar",S[S.StackedColumn=33]="StackedColumn",S[S.PercentStackedColumn=34]="PercentStackedColumn",S[S.StackedLine=37]="StackedLine",S[S.PercentStackedLine=38]="PercentStackedLine",S[S.MarkerLine=39]="MarkerLine",S[S.StackedMarkerLine=40]="StackedMarkerLine",S[S.PercentStackedMarkerLine=41]="PercentStackedMarkerLine",(p=_||(_={}))[p.Column=0]="Column",p[p.Line=1]="Line",p[p.Pie=2]="Pie",p[p.Bar=3]="Bar",p[p.Combo=4]="Combo",p[p.Table=5]="Table",p[p.Number=6]="Number",p[p.Text=7]="Text",(C=d||(d={}))[C.LEFT=1]="LEFT",C[C.RIGHT=2]="RIGHT",(h=l||(l={}))[h.LEVEL_1=1]="LEVEL_1",h[h.LEVEL_2=2]="LEVEL_2",h[h.LEVEL_3=3]="LEVEL_3",h[h.LEVEL_4=4]="LEVEL_4",(k=E||(E={}))[k.RECORD_COUNT=0]="RECORD_COUNT",k[k.FIELD=1]="FIELD"},279160:function(e,t,a){a.d(t,{K:function(){return c}});var n=a(593323),r=a(175055),c=new function e(){var t=this;(0,n._)(this,e),this.moduleName="dashboard",this.createStatDashBoard=(e,t)=>{this.report("col_sta",{ver5:e,ver6:t})},this.createChartDashBoard=(e,t)=>{this.report("mul_col",{ver5:e,ver6:t})},this.report=function(e){var a=arguments.length>1&&void 0!==arguments[1]?arguments[1]:{};r.E.metricsTdw(Object.assign(Object.assign({},a),{action:e,module:t.moduleName}))}}},145378:function(e,t,a){a.r(t),a.d(t,{ChartPanel:function(){return h}});var n=a(463313),r=a.n(n),c=a(289602),i=a(191058),o=a(755020),_=a(260433),d=a(861381),l=a(978452),E=a(279160),u=a(485584),m=[{group:l.l5.Column,groupName:u.ag.t("column_chart"),items:[{type:l.oX.COLUMN_CHART,name:u.ag.t("column_chart"),icon:"column_icon"},{type:l.oX.StackedColumn,name:u.ag.t("stacked_column_chart"),icon:"column_stack_icon"},{type:l.oX.PercentStackedColumn,name:u.ag.t("percent_stacked_column_chart"),icon:"column_stack_percent_icon"}]},{group:l.l5.Line,groupName:u.ag.t("line_chart"),items:[{type:l.oX.LINE_CHART,name:u.ag.t("line_chart"),icon:"line_icon"},{type:l.oX.StackedLine,name:u.ag.t("stacked_line_chart"),icon:"stacked_line_icon"},{type:l.oX.PercentStackedLine,name:u.ag.t("percent_stacked_line_chart"),icon:"percent_stacked_line_icon"},{type:l.oX.MarkerLine,name:u.ag.t("line_chart_with_data_markers"),icon:"marked_line_icon"},{type:l.oX.StackedMarkerLine,name:u.ag.t("stacked_line_chart_with_data_markers"),icon:"marked_stacked_line_icon"},{type:l.oX.PercentStackedMarkerLine,name:u.ag.t("percent_stacked_line_chart_with_data_markers"),icon:"marked_percent_stacked_line_icon"}]},{group:l.l5.Pie,groupName:u.ag.t("pie_chart"),items:[{type:l.oX.Pie,name:u.ag.t("pie_chart"),icon:"pie_icon"},{type:l.oX.Doughnut,name:u.ag.t("donut_chart"),icon:"doughnut_icon"}]},{group:l.l5.Bar,groupName:u.ag.t("bar_chart"),items:[{type:l.oX.ClusteredBar,name:u.ag.t("bar_chart"),icon:"bar_icon"},{type:l.oX.StackedBar,name:u.ag.t("stacked_bar_chart"),icon:"bar_stack_icon"},{type:l.oX.PercentStackedBar,name:u.ag.t("percent_stacked_bar_chart"),icon:"bar_stack_percent_icon"}]}],T=a(830982),s=T.ZP.div`
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  box-sizing: border-box;
+  overflow: hidden;
+`,S=T.ZP.div`
+  display: flex;
+  align-items: center;
+  align-self: stretch;
+  height: 30px;
+  line-height: 30px;
+`,p=T.ZP.div`
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+`,C=T.ZP.div`
+  width: 68px;
+  height: 42px;
+  padding: 4px;
+  box-sizing: border-box;
+  border: 1px solid var(--TDoc-Light-Border-border-medium, rgba(0, 0, 0, 0.08));
+  :hover {
+    border: 1px solid var(--TDoc-Light-Border-border-medium, rgba(150, 156, 163, 0.36));
+  }
+`,h=e=>{var{tableId:t,viewId:a,fieldIds:u}=e,T=(0,n.useCallback)(e=>{var n=[{fieldId:u[0],sort:{sortType:l.ER.CATEGORIES_TEXT,order:l.KM.ASCEND}}],r=u.slice(1).map(e=>({fieldId:e,statType:d.w.COUNT})),c=0;i.K.selectSheet({onSelect:(i,d)=>{c=null!=d?d:0,o.B.execute(_.T.FIELD_CREATE_DASHBOARD,{sheetId:t,viewId:a,chartContent:{type:e,commonChartContent:{categories:n,series:r}},targetId:i})}}),E.K.createChartDashBoard(e,c)},[u,t,a]);return r().createElement(s,null,m.map(e=>{var{groupName:t,items:a}=e;return r().createElement("div",{key:t},r().createElement(S,null,t),r().createElement(p,null,a.map(e=>r().createElement(c.default,{title:e.name},r().createElement(C,{key:e.type},r().createElement("div",{className:`chart-type-selector-option-icon ${e.icon}`,onClick:()=>T(e.type)}))))))}))}}}]);
+//# sourceMappingURL=79925.2eb1ee6af3aaf19e.js.map

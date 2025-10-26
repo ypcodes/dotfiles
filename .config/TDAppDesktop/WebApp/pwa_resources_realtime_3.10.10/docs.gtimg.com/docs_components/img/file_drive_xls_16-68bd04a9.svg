@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>file_drive_xls_16</title>
+    <defs>
+        <linearGradient x1="62.3591598%" y1="-25.6745377%" x2="34.6630762%" y2="72.6276774%" id="linearGradient-1">
+            <stop stop-color="#00CEAE" offset="0.0290329392%"></stop>
+            <stop stop-color="#00A558" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,3.56151332 L7.15546515,2.82411092 C7.3271449,2.80641856 7.48066133,2.93125 7.49835369,3.10292976 C7.49945051,3.11357282 7.5,3.12426518 7.5,3.13496461 L7.5,12.4900528 C7.5,12.6626418 7.36008898,12.8025528 7.1875,12.8025528 C7.17680057,12.8025528 7.16610821,12.8020033 7.15546515,12.8009065 L0,12.0635041 L0,12.0635041 L0,3.56151332 Z" id="path-2"></path>
+        <filter x="-6.7%" y="-4.9%" width="113.3%" height="109.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="3.675 6.96931818 4.62 5.4325 5.7 5.3125 4.215 7.7875 5.7 10.2625 4.62 10.1425 3.675 8.60568182 2.955 9.9325 1.875 9.8125 3.135 7.7875 1.875 5.7625 2.955 5.6425"></polygon>
+        <filter x="-39.2%" y="-30.3%" width="178.4%" height="160.6%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="file_drive_xls_16" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="编组-26备份" transform="translate(1.000000, 0.187500)">
+            <path d="M0.625,0 L13.375,0 C13.720178,0 14,0.279822031 14,0.625 L14,15 C14,15.345178 13.720178,15.625 13.375,15.625 L0.625,15.625 C0.279822031,15.625 0,15.345178 0,15 L0,0.625 C0,0.279822031 0.279822031,0 0.625,0 Z" id="Rectangle-27" fill="#FAFAFA"></path>
+            <path d="M13.375,0 C13.720178,0 14,0.279822031 14,0.625 L14,15 C14,15.345178 13.720178,15.625 13.375,15.625 L0.625,15.625 C0.279822031,15.625 0,15.345178 0,15 L0,0.625 C0,0.279822031 0.279822031,0 0.625,0 L13.375,0 Z M13.375,0.5 L0.625,0.5 C0.569771525,0.5 0.52290861,0.53581722 0.506372583,0.585490332 L0.5,0.625 L0.5,15 C0.5,15.0552285 0.53581722,15.1020914 0.585490332,15.1186274 L0.625,15.125 L13.375,15.125 C13.4302285,15.125 13.4770914,15.0891828 13.4936274,15.0395097 L13.5,15 L13.5,0.625 C13.5,0.569771525 13.4641828,0.52290861 13.4145097,0.506372583 L13.375,0.5 Z" id="Rectangle-27" fill="#DCDCDC" fill-rule="nonzero"></path>
+            <path d="M11.1125,11.4125 L11.1125,12.7625 L8.4125,12.7625 L8.4125,11.4125 L11.1125,11.4125 Z M7.9625,11.4125 L7.9625,12.7625 L5.2625,12.7625 L5.2625,11.4125 L7.9625,11.4125 Z M11.1125,9.6125 L11.1125,10.9625 L8.4125,10.9625 L8.4125,9.6125 L11.1125,9.6125 Z M7.9625,9.6125 L7.9625,10.9625 L5.2625,10.9625 L5.2625,9.6125 L7.9625,9.6125 Z M11.1125,7.8125 L11.1125,9.1625 L8.4125,9.1625 L8.4125,7.8125 L11.1125,7.8125 Z M7.9625,7.8125 L7.9625,9.1625 L5.2625,9.1625 L5.2625,7.8125 L7.9625,7.8125 Z M11.1125,6.0125 L11.1125,7.3625 L8.4125,7.3625 L8.4125,6.0125 L11.1125,6.0125 Z M7.9625,6.0125 L7.9625,7.3625 L5.2625,7.3625 L5.2625,6.0125 L7.9625,6.0125 Z M11.1125,4.2125 L11.1125,5.5625 L8.4125,5.5625 L8.4125,4.2125 L11.1125,4.2125 Z M7.9625,4.2125 L7.9625,5.5625 L5.2625,5.5625 L5.2625,4.2125 L7.9625,4.2125 Z" id="形状结合" fill="#E5E5E5"></path>
+            <g id="Rectangle-29备份">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+            </g>
+            <g id="ico_xlsx_small">
+                <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+            </g>
+        </g>
+    </g>
+</svg>

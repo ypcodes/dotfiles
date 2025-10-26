@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>file_drive_word_32</title>
+    <defs>
+        <radialGradient cx="89.4731001%" cy="0%" fx="89.4731001%" fy="0%" r="134.953942%" gradientTransform="translate(0.894731,0.000000),scale(1.000000,0.750000),rotate(121.039790),translate(-0.894731,-0.000000)" id="radialGradient-1">
+            <stop stop-color="#359FFF" offset="0%"></stop>
+            <stop stop-color="#1E6FFF" offset="99.9234586%"></stop>
+        </radialGradient>
+        <path d="M0,7.12302665 L14.3109303,5.64822183 C14.6542898,5.61283711 14.9613227,5.86250001 14.9967074,6.20585952 C14.998901,6.22714564 15,6.24853037 15,6.26992922 L15,24.9801056 C15,25.3252836 14.720178,25.6051056 14.375,25.6051056 C14.3536011,25.6051056 14.3322164,25.6040066 14.3109303,25.601813 L0,24.1270082 L0,24.1270082 L0,7.12302665 Z" id="path-2"></path>
+        <filter x="-6.7%" y="-4.9%" width="113.3%" height="109.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <polygon id="path-4" points="9.02258065 16.433517 10.3 11.39875 11.95 11.25 9.75 20.0522222 8.2375 19.9188281 7.00004414 14.9570625 5.7625 19.7050781 4.25 19.5772222 2.5 12.105 4.15 11.96875 4.97741935 16.3771695 6.175 11.7596875 7.825 11.6171875"></polygon>
+        <filter x="-31.7%" y="-34.1%" width="163.5%" height="168.2%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="moble-新图标" transform="translate(-1181.000000, -1434.000000)">
+            <g id="编组-17备份-2" transform="translate(1181.000000, 1434.000000)">
+                <rect id="矩形" stroke="#979797" fill="#D8D8D8" opacity="0" x="0" y="0" width="32" height="32"></rect>
+                <g id="编组-27备份" transform="translate(2.000000, 0.000000)">
+                    <path d="M1.25,0 L26.75,0 C27.4403559,0 28,0.559644063 28,1.25 L28,30 C28,30.6903559 27.4403559,31.25 26.75,31.25 L1.25,31.25 C0.559644063,31.25 0,30.6903559 0,30 L0,1.25 C0,0.559644063 0.559644063,0 1.25,0 Z" id="Rectangle-27" fill="#FAFAFA"></path>
+                    <path d="M26.75,0 C27.4403559,0 28,0.559644063 28,1.25 L28,30 C28,30.6903559 27.4403559,31.25 26.75,31.25 L1.25,31.25 C0.559644063,31.25 0,30.6903559 0,30 L0,1.25 C0,0.559644063 0.559644063,0 1.25,0 L26.75,0 Z M26.75,1 L1.25,1 C1.13954305,1 1.04581722,1.07163444 1.01274517,1.17098066 L1,1.25 L1,30 C1,30.1104569 1.07163444,30.2041828 1.17098066,30.2372548 L1.25,30.25 L26.75,30.25 C26.8604569,30.25 26.9541828,30.1783656 26.9872548,30.0790193 L27,30 L27,1.25 C27,1.13954305 26.9283656,1.04581722 26.8290193,1.01274517 L26.75,1 Z" id="Rectangle-27" fill="#DCDCDC" fill-rule="nonzero"></path>
+                    <path d="M22.225,22.825 L22.225,24.175 L4.225,24.175 L4.225,22.825 L22.225,22.825 Z M22.225,19.675 L22.225,21.025 L4.225,21.025 L4.225,19.675 L22.225,19.675 Z M22.225,16.525 L22.225,17.875 L4.225,17.875 L4.225,16.525 L22.225,16.525 Z M22.225,13.375 L22.225,14.725 L4.225,14.725 L4.225,13.375 L22.225,13.375 Z M22.225,10.225 L22.225,11.575 L4.225,11.575 L4.225,10.225 L22.225,10.225 Z" id="形状结合" fill="#E5E5E5"></path>
+                    <g id="Rectangle-29">
+                        <use fill="url(#radialGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="ico_doc_small">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

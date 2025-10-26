@@ -1,0 +1,33 @@
+<svg width="66" height="66" viewBox="0 0 66 66" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="66" height="66" fill="white"/>
+<rect x="10" y="22" width="1" height="2" transform="rotate(90 10 22)" fill="#C2D8FF"/>
+<rect x="10" y="37.8667" width="1" height="2" transform="rotate(90 10 37.8667)" fill="#C2D8FF"/>
+<rect x="15.0555" y="48.5" width="1" height="4.05556" transform="rotate(90 15.0555 48.5)" fill="#C2D8FF"/>
+<rect x="23.1667" y="48.5" width="1" height="4.05556" transform="rotate(90 23.1667 48.5)" fill="#C2D8FF"/>
+<rect x="31.2777" y="48.5" width="1" height="4.05556" transform="rotate(90 31.2777 48.5)" fill="#C2D8FF"/>
+<rect x="39.3889" y="48.5" width="1" height="4.05556" transform="rotate(90 39.3889 48.5)" fill="#C2D8FF"/>
+<rect x="47.5" y="48.5" width="1" height="4.05556" transform="rotate(90 47.5 48.5)" fill="#C2D8FF"/>
+<path d="M16 12V46" stroke="#99BEFF" stroke-width="0.5" stroke-dasharray="1 1"/>
+<path d="M25 12V46" stroke="#99BEFF" stroke-width="0.5" stroke-dasharray="1 1"/>
+<path d="M34 12V46" stroke="#99BEFF" stroke-width="0.5" stroke-dasharray="1 1"/>
+<path d="M43 12V46" stroke="#99BEFF" stroke-width="0.5" stroke-dasharray="1 1"/>
+<rect x="11.125" y="45.875" width="33.75" height="0.25" transform="rotate(-90 11.125 45.875)" fill="#C2D8FF" stroke="#99BEFF" stroke-width="0.25"/>
+<rect x="20.125" y="45.875" width="33.75" height="0.25" transform="rotate(-90 20.125 45.875)" fill="#C2D8FF" stroke="#99BEFF" stroke-width="0.25"/>
+<rect x="29.125" y="45.875" width="33.75" height="0.25" transform="rotate(-90 29.125 45.875)" fill="#C2D8FF" stroke="#99BEFF" stroke-width="0.25"/>
+<rect x="38.125" y="45.875" width="33.75" height="0.25" transform="rotate(-90 38.125 45.875)" fill="#C2D8FF" stroke="#99BEFF" stroke-width="0.25"/>
+<rect x="47.125" y="45.875" width="33.75" height="0.25" transform="rotate(-90 47.125 45.875)" fill="#C2D8FF" stroke="#99BEFF" stroke-width="0.25"/>
+<rect x="11.125" y="46.125" width="36.25" height="0.25" fill="#C2D8FF" stroke="#99BEFF" stroke-width="0.25"/>
+<rect x="7" y="41" width="2" height="21" transform="rotate(-180 7 41)" fill="#C2D8FF"/>
+<rect width="10" height="15" transform="matrix(1.37753e-08 -1 -1 -1.0323e-08 26.5 27)" fill="#66DFB0"/>
+<rect width="10" height="18.5" transform="matrix(1.37753e-08 -1 -1 -1.0323e-08 45 27)" fill="#175CEB"/>
+<rect width="10" height="17.6875" transform="matrix(1.26345e-08 -1 -1 -1.12551e-08 29.1875 43)" fill="#66DFB0"/>
+<rect width="10" height="14.0625" transform="matrix(1.30557e-08 -1 -1 -1.0892e-08 43.25 43)" fill="#175CEB"/>
+<rect x="60.75" y="26.25" width="13.5" height="9.5" transform="rotate(90 60.75 26.25)" fill="#F1F4FF" stroke="#99BEFF" stroke-width="0.5"/>
+<rect x="53" y="28" width="2" height="2" fill="#5C98FF"/>
+<rect x="56" y="28.5" width="3" height="1" fill="#5C98FF"/>
+<rect x="56" y="32.5" width="3" height="1" fill="#5C98FF"/>
+<rect x="56" y="36.5" width="3" height="1" fill="#5C98FF"/>
+<rect x="53" y="32" width="2" height="2" fill="#5C98FF"/>
+<rect x="53" y="36" width="2" height="2" fill="#5C98FF"/>
+<rect x="46" y="57" width="2" height="26" transform="rotate(90 46 57)" fill="#EDF4FF"/>
+</svg>

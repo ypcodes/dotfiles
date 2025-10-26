@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunk_tencent_docs_desktop=self.webpackChunk_tencent_docs_desktop||[]).push([[8686],{90445:function(e,n,s){s.d(n,{I:function(){return i}});var t=s(52647),c=s(58958),o=s(16009),i=function(e){var n=e.docType,s=e.mimeType,i=e.size;return n!==c.Vm.Drive?(0,t.jsx)(o.o,{docType:n,size:i}):(0,t.jsx)(o.o,{mimeType:s,size:i})}}}]);
+//# sourceMappingURL=import-kit~core~task-manage~pc.7d6d3c93.chunk.js.map

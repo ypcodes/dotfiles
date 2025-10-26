@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="320px" height="320px" viewBox="0 0 320 320" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>ist_blankpage_nofiles2</title>
+    <defs>
+        <linearGradient x1="68.9822089%" y1="-18.1116372%" x2="35.531706%" y2="110.464153%" id="linearGradient-1">
+            <stop stop-color="#8EA8FF" offset="0%"></stop>
+            <stop stop-color="#EAEFFF" offset="31.4269926%"></stop>
+            <stop stop-color="#A5D9FF" offset="74.0374216%"></stop>
+            <stop stop-color="#1E70FF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M3.00000008,0.0004604251 L99.644,0.015 L99.644787,44.7224634 C99.6442313,44.7226487 99.6439534,44.7228339 99.6438145,44.7230192 L99.648707,44.9016653 C99.7416183,46.5520737 101.109674,47.8614361 102.783205,47.8597703 L102.783205,47.8597703 L146.718,47.843 L146.608948,174.304919 C146.604586,175.960628 145.262057,177.302135 143.606345,177.305239 L3.0000001,177.320322 C1.40231926,177.320804 0.0962052977,176.072035 0.00478993713,174.497238 L1.18321026e-07,174.320644 L1.18321026e-07,174.320644 L1.18321026e-07,3 C-0.00044382896,1.40231912 1.24846028,0.0963391206 2.82326696,0.00509269341 L2.99953973,0 C2.9996932,-2.81929062e-20 2.99984668,1.1777293e-08 3.00000008,0.0004604251 Z" id="path-2"></path>
+        <filter x="-4.1%" y="-3.4%" width="108.2%" height="106.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="6" dy="-6" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.85706936   0 0 0 0 0.950172617   0 0 0 0 1  0 0 0 0.557610358 0" type="matrix" in="shadowInnerInner1" result="shadowMatrixInner1"></feColorMatrix>
+            <feGaussianBlur stdDeviation="3" in="SourceAlpha" result="shadowBlurInner2"></feGaussianBlur>
+            <feOffset dx="-6" dy="2" in="shadowBlurInner2" result="shadowOffsetInner2"></feOffset>
+            <feComposite in="shadowOffsetInner2" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner2"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.918597561   0 0 0 0 0.94120935   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowInnerInner2" result="shadowMatrixInner2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixInner1"></feMergeNode>
+                <feMergeNode in="shadowMatrixInner2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <filter x="-7.7%" y="-181.6%" width="115.3%" height="463.2%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="3.91575825" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+    </defs>
+    <g id="控件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="空白页插图" transform="translate(84.000000, 69.000000)">
+            <g id="编组-2" transform="translate(0.000000, 0.000000)">
+                <g id="编组-3" transform="translate(2.940337, 0.000000)">
+                    <g id="形状结合">
+                        <use fill-opacity="0.16" fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    </g>
+                    <path d="M111.751055,6.67423542 L140.975825,36.5527782 C141.581824,37.1723333 141.570834,38.1658409 140.951279,38.7718395 C140.658194,39.0585114 140.264556,39.2190986 139.854581,39.2192449 L112.198461,39.2291114 C110.465161,39.2308492 109.059542,37.8262328 109.058923,36.0929322 C109.058923,36.092559 109.058923,36.0921858 109.060042,36.0918126 L109.060042,7.77149293 C109.060042,6.9048426 109.762601,6.20228369 110.629252,6.20228369 C111.05145,6.20228369 111.455837,6.37241242 111.751055,6.67423542 Z" id="Rectangle" fill="#A5D9FF"></path>
+                </g>
+                <ellipse id="椭圆形备份-6" fill="#A9BAD9" opacity="0.104399182" filter="url(#filter-4)" cx="76.538" cy="209.034" rx="76.538" ry="3.234"></ellipse>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="29px" height="29px" viewBox="0 0 29 29" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.6 (67491) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 13</title>
+    <desc>Created with Sketch.</desc>
+    <g id="PPT" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PPT-选中表格" transform="translate(-453.000000, -350.000000)">
+            <g id="分组-13" transform="translate(454.000000, 351.000000)">
+                <g>
+                    <circle id="椭圆形-copy-2" stroke="#E3E3E3" fill="#FFFFFF" cx="13.5" cy="13.5" r="14"></circle>
+                    <g id="分组-5" transform="translate(4.000000, 4.000000)" fill="#5C5C5C">
+                        <g id="move_icon">
+                            <g id="分组-5-copy-3" transform="translate(0.000000, 6.000000)">
+                                <rect id="矩形" x="1" y="3" width="17" height="1"></rect>
+                                <polygon id="路径" fill-rule="nonzero" points="4 6.22222222 3.27272727 7 0 3.5 3.27272727 0 4 0.777777778 1.45454545 3.5"></polygon>
+                                <polygon id="路径-copy" fill-rule="nonzero" transform="translate(17.000000, 3.500000) scale(-1, 1) translate(-17.000000, -3.500000) " points="19 6.22222222 18.2727273 7 15 3.5 18.2727273 0 19 0.777777778 16.4545455 3.5"></polygon>
+                            </g>
+                            <g id="分组-5-copy-4" transform="translate(9.500000, 9.500000) rotate(-270.000000) translate(-9.500000, -9.500000) translate(0.000000, 6.000000)">
+                                <rect id="矩形" x="1" y="3" width="17" height="1"></rect>
+                                <polygon id="路径" fill-rule="nonzero" points="4 6.22222222 3.27272727 7 0 3.5 3.27272727 0 4 0.777777778 1.45454545 3.5"></polygon>
+                                <polygon id="路径-copy" fill-rule="nonzero" transform="translate(17.000000, 3.500000) scale(-1, 1) translate(-17.000000, -3.500000) " points="19 6.22222222 18.2727273 7 15 3.5 18.2727273 1.8369702e-16 19 0.777777778 16.4545455 3.5"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

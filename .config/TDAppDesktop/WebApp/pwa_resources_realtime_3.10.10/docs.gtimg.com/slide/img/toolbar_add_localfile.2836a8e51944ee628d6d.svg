@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="192px" height="108px" viewBox="0 0 192 108" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>toolbar_add_localfile</title>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="192" height="108" rx="2"></rect>
+        <path d="M2,40 L126,40 C127.104569,40 128,40.8954305 128,42 L128,64 L128,64 L0,64 L0,42 C-1.3527075e-16,40.8954305 0.8954305,40 2,40 Z" id="path-3"></path>
+        <filter x="-0.4%" y="-2.1%" width="100.8%" height="108.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feComposite in="shadowOffsetOuter1" in2="SourceAlpha" operator="out" result="shadowOffsetOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.329411765   0 0 0 0 0.42745098   0 0 0 0 1  0 0 0 0.16 0" type="matrix" in="shadowOffsetOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="0" y="0" width="122" height="24" rx="2"></rect>
+        <filter x="-12.3%" y="-45.8%" width="124.6%" height="225.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feMorphology radius="2" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="4" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="3" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0.0784313725   0 0 0 0 0.301960784   0 0 0 0 0.921568627  0 0 0 0.04 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="支持上传附件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="PC_01入口" transform="translate(-373.000000, -548.000000)">
+            <g id="本地文件引导" transform="translate(373.000000, 548.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="蒙版" fill="#E6F5FF" xlink:href="#path-1"></use>
+                <g id="窗口" mask="url(#mask-2)">
+                    <g transform="translate(32.000000, 28.000000)">
+                        <rect id="矩形" stroke="none" fill="#B6DEFF" fill-rule="evenodd" x="0" y="0" width="128" height="64" rx="2"></rect>
+                        <path d="M33.7251041,46 C32.8729686,46 32.1821764,45.3092077 32.1821764,44.4570723 C32.1821764,44.177426 32.2581776,43.9030373 32.4020545,43.6632425 L48.0316834,17.6138611 C48.4701034,16.8831609 49.4178626,16.6462212 50.1485627,17.0846412 C50.2356882,17.1369165 50.317437,17.19767 50.3926185,17.2660168 L66.566,31.969 L71.0355243,25.4145643 C71.5155636,24.7105067 72.4754638,24.5289039 73.1795214,25.0089432 C73.2236559,25.0390349 73.2661979,25.0713982 73.3069756,25.1059024 L95.5884018,43.9594169 C96.0762832,44.3722396 96.1371303,45.1024045 95.7243076,45.5902859 C95.5044355,45.8501348 95.18131,46 94.8409202,46 L33.7251041,46 Z" id="fill备份" stroke="none" fill="#81C0FF" fill-rule="evenodd"></path>
+                        <circle id="椭圆形" stroke="none" fill="#81C0FF" fill-rule="evenodd" cx="77.209403" cy="13" r="5"></circle>
+                        <g id="矩形" stroke="none" fill="none" transform="translate(64.000000, 52.000000) scale(1, -1) translate(-64.000000, -52.000000) ">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill-opacity="0.8" fill="#E6F5FF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="编组-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(4.000000, 42.000000)">
+                            <rect id="矩形" fill="#B6DEFF" transform="translate(60.000000, 3.000000) scale(1, -1) translate(-60.000000, -3.000000) " x="0" y="2" width="120" height="2" rx="1"></rect>
+                            <rect id="矩形" fill="#81C0FF" transform="translate(42.212389, 3.000000) scale(1, -1) translate(-42.212389, -3.000000) " x="0" y="2" width="84.4247788" height="2" rx="1"></rect>
+                            <circle id="Control控制器/滑动选择/按钮/默认" stroke="#B6DEFF" fill="#FFFFFF" cx="84" cy="3" r="3.5"></circle>
+                        </g>
+                        <text id="05:28/06:10" stroke="none" fill="none" font-family="PingFangSC-Medium, PingFang SC" font-size="8" font-weight="400" line-spacing="8">
+                            <tspan x="15" y="58" fill="#81C0FF">05:28/06:10</tspan>
+                        </text>
+                        <path d="M9.49923018,51.7488453 L12.3781199,56.0671799 C12.5619314,56.3428971 12.4874271,56.7154187 12.2117099,56.8992302 C12.1131494,56.9649372 11.9973447,57 11.8788897,57 L6.12111026,57 C5.78973941,57 5.52111026,56.7313708 5.52111026,56.4 C5.52111026,56.281545 5.55617307,56.1657404 5.62188008,56.0671799 L8.50076982,51.7488453 C8.6845813,51.4731281 9.0571029,51.3986237 9.33282012,51.5824352 C9.39873149,51.6263761 9.45528926,51.6829339 9.49923018,51.7488453 Z" id="三角形" stroke="none" fill="#81C0FF" fill-rule="evenodd" transform="translate(9.000000, 54.000000) rotate(90.000000) translate(-9.000000, -54.000000) "></path>
+                        <rect id="矩形备份-2" stroke="none" fill="#B6DEFF" fill-rule="evenodd" opacity="0.4" transform="translate(112.000000, 54.000000) scale(1, -1) translate(-112.000000, -54.000000) " x="100" y="52" width="24" height="4" rx="1"></rect>
+                        <rect id="矩形" stroke-opacity="0.16" stroke="#546DFF" stroke-width="1" fill="none" x="0.5" y="0.5" width="127" height="63" rx="2"></rect>
+                    </g>
+                </g>
+                <g id="编组-4备份" mask="url(#mask-2)">
+                    <g transform="translate(20.000000, 16.000000)" id="icon">
+                        <g id="矩形">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <rect stroke-opacity="0.242614319" stroke="#1E6FFF" stroke-width="1" fill-opacity="0.8" fill="#FFFFFF" fill-rule="evenodd" x="-0.5" y="-0.5" width="123" height="25" rx="2"></rect>
+                        </g>
+                        <rect id="矩形" fill="#E6F5FF" x="56" y="6" width="1" height="12"></rect>
+                        <rect id="矩形" fill="#E6F5FF" x="86" y="6" width="1" height="12"></rect>
+                        <g id="Bars栏/工具栏/元素/图标+箭头备份-3" transform="translate(62.000000, 6.000000)" fill="#81C0FF">
+                            <path d="M10,10.1509434 L10,11 L0,11 L0,10.1509434 L10,10.1509434 Z M9.67857143,1 C9.85609153,1 10,1.13823112 10,1.30874786 L10,8.48370497 C10,8.65422171 9.85609153,8.79245283 9.67857143,8.79245283 L0.321428571,8.79245283 C0.143908473,8.79245283 0,8.65422171 0,8.48370497 L0,1.30874786 C0,1.13823112 0.143908473,1 0.321428571,1 L9.67857143,1 Z M9.19642857,1.8490566 L0.803571429,1.8490566 L0.803571429,7.94339623 L9.19642857,7.94339623 L9.19642857,1.8490566 Z" id="形状"></path>
+                            <path d="M15.628,4.83733333 L17.808,7.744 C17.8610193,7.81469245 17.8466924,7.91498066 17.776,7.968 C17.7483046,7.98877154 17.7146192,8 17.68,8 L13.32,8 C13.2316344,8 13.16,7.92836556 13.16,7.84 C13.16,7.80538077 13.1712285,7.77169539 13.192,7.744 L15.372,4.83733333 C15.4250193,4.76664089 15.5253076,4.752314 15.596,4.80533333 C15.6081289,4.81443001 15.6189033,4.82520443 15.628,4.83733333 Z" id="三角形" transform="translate(15.500000, 6.333333) scale(1, -1) translate(-15.500000, -6.333333) "></path>
+                            <path d="M38.6875,0 C38.860089,0 39,0.149238417 39,0.333333333 L39,2 L42,2 L42,3 L40.944,3 L40.3000518,10.6912906 C40.285453,10.8653556 40.1212922,11 39.9236678,11 L33.0763494,11 C32.878725,11 32.7145642,10.8653556 32.6999654,10.6912906 L32.055,3 L31,3 L31,2 L34,2 L34,0.333333333 C34,0.149238417 34.139911,0 34.3125,0 L38.6875,0 Z M39.875,3 L33.125,3 L33.7158917,10 L39.2841083,10 L39.875,3 Z M37,5 L37,8 L36,8 L36,5 L37,5 Z M38.1666667,1 L34.8333333,1 L34.8333333,2 L38.1666667,2 L38.1666667,1 Z" id="形状结合"></path>
+                        </g>
+                        <text id="下载文件" font-family="PingFangSC-Medium, PingFang SC" font-size="10" font-weight="400" line-spacing="10" fill="#81C0FF">
+                            <tspan x="10" y="17">下载文件</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

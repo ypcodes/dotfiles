@@ -1,0 +1,49 @@
+
+<svg width="64px" height="64px" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    
+    <title>file_slide_64</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="100%" y1="39.4645982%" x2="83.1081738%" y2="39.4645982%" id="linearGradient-1">
+            <stop stop-color="#F7501C" offset="0%"></stop>
+            <stop stop-color="#D93213" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="82.8871475%" y1="0%" x2="9.5%" y2="100%" id="linearGradient-2">
+            <stop stop-color="#FF8759" offset="0%"></stop>
+            <stop stop-color="#FF5B0F" offset="100%"></stop>
+        </linearGradient>
+        <path d="M10.2659627,0.0168504055 L10.2666667,11.7260807 L21.975897,11.7267847 C21.5981897,17.4596751 16.8284727,21.9927474 11,21.9927474 C4.92486775,21.9927474 -3.12638804e-14,17.0678796 -3.12638804e-14,10.9927474 C-3.12638804e-14,5.16427463 4.53307224,0.394557637 10.2659627,0.0168504055 Z" id="path-3"></path>
+        <filter x="-13.7%" y="-9.1%" width="136.4%" height="136.4%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="1" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.08 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M12.8415321,-1.7606858e-05 C17.8235745,0.192622324 21.8248798,4.20843311 21.9944054,9.19637229 L12.8413816,9.19598239 Z" id="path-5"></path>
+        <filter x="-27.3%" y="-27.2%" width="176.5%" height="176.1%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.457455842   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mobile-doc-icon" transform="translate(-473.000000, -684.000000)">
+            <g id="file/slide/64" transform="translate(473.000000, 684.000000)">
+                <rect id="矩形" x="0" y="0" width="64" height="64"></rect>
+                <g id="编组-8" stroke-width="1" fill-rule="evenodd" transform="translate(10.000000, 10.000000)">
+                    <path d="M10.6206897,10.6206897 L40.9655172,10.6206897 C42.6414158,10.6206897 44,11.9792739 44,13.6551724 L44,42.4827586 C44,44.1586572 42.6414158,45.5172414 40.9655172,45.5172414 L10.6206897,45.5172414 C8.9447911,45.5172414 7.5862069,44.1586572 7.5862069,42.4827586 L7.5862069,13.6551724 C7.5862069,11.9792739 8.9447911,10.6206897 10.6206897,10.6206897 Z" id="蒙版备份" fill="url(#linearGradient-1)"></path>
+                    <path d="M34.8965517,0 C36.5724503,-3.07857569e-16 37.9310345,1.35858421 37.9310345,3.03448276 L37.9310345,42.4827586 L37.9310345,42.4827586 C37.9310345,44.1586572 39.2896187,45.5172414 40.9655172,45.5172414 L3.03448276,45.5172414 C1.35858421,45.5172414 1.0934168e-15,44.1586572 0,42.4827586 L0,3.03448276 C-2.0523838e-16,1.35858421 1.35858421,1.19603599e-15 3.03448276,0 L34.8965517,0 Z" id="蒙版" fill="url(#linearGradient-2)"></path>
+                    <g id="编组-3" transform="translate(8.000000, 15.000000)">
+                        <g id="形状结合">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                            <use fill="#FFCFC0" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="形状结合">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

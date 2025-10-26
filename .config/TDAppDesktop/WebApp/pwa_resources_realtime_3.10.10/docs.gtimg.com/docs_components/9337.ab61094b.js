@@ -1,0 +1,2 @@
+"use strict";(("undefined"!=typeof window?window:global).webpackChunk_tencent_docs_component_login=("undefined"!=typeof window?window:global).webpackChunk_tencent_docs_component_login||[]).push([[9337],{79337:function(e,n,o){o.r(n);var t=o(99881);const i=(0,o(86134).yP)((e=>(0,t.jsx)("svg",Object.assign({fill:"none",viewBox:"0 0 16 16",width:"1em",height:"1em",focusable:!1},e,{children:(0,t.jsx)("rect",{x:3,y:3,width:10,height:10,rx:2,fill:"currentColor"})}))),"stop--filled");n.default=i}}]);
+//# sourceMappingURL=9337.ab61094b.js.map

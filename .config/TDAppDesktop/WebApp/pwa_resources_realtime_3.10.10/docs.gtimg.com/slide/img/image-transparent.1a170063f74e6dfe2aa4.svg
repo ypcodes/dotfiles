@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>_图标/工具栏/04_幻灯片/背景备份@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="14" height="14"></rect>
+    </defs>
+    <g id="_图标/工具栏/04_幻灯片/背景备份" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g id="编组-9复制-18" opacity="0" fill="#000000">
+                <rect id="Rectangle" opacity="0.0599999987" x="0" y="0" width="24" height="24"></rect>
+                <rect id="Rectangle" opacity="0.100000001" x="4" y="4" width="16" height="16"></rect>
+                <rect id="Rectangle" opacity="0.119999997" x="5" y="5" width="14" height="14"></rect>
+            </g>
+            <g id="分组-2-copy" transform="translate(5.000000, 5.000000)">
+                <g id="背景">
+                    <rect id="矩形复制-4" x="0" y="0" width="14" height="14" rx="0.5"></rect>
+                    <g id="路径-2-+-路径-3-+-路径-4-Mask">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Mask"></g>
+                        <line x1="7" y1="-1" x2="-3" y2="9" id="路径-2" stroke="#464D5A" mask="url(#mask-2)"></line>
+                        <line x1="6" y1="-4" x2="-4" y2="6" id="路径-2" stroke="#464D5A" mask="url(#mask-2)"></line>
+                        <line x1="15" y1="7" x2="5" y2="17" id="路径-2-copy" stroke="#464D5A" mask="url(#mask-2)"></line>
+                        <line x1="16" y1="10" x2="7" y2="19" id="路径-2-copy" stroke="#464D5A" mask="url(#mask-2)"></line>
+                        <line x1="-2" y1="16" x2="15" y2="-1" id="路径-3" stroke="#464D5A" mask="url(#mask-2)"></line>
+                        <line x1="0" y1="18" x2="15" y2="3" id="路径-3-copy-2" stroke="#464D5A" mask="url(#mask-2)"></line>
+                        <line x1="-4" y1="14" x2="11" y2="-1" id="路径-3-copy" stroke="#464D5A" mask="url(#mask-2)"></line>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

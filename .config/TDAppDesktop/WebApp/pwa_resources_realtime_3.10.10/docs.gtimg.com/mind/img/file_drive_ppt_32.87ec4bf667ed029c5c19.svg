@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>file_drive_ppt_32</title>
+    <defs>
+        <linearGradient x1="72.8382969%" y1="0%" x2="21.875%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#FF8759" offset="0%"></stop>
+            <stop stop-color="#FF5B0F" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,7.12302665 L14.3109303,5.64822183 C14.6542898,5.61283711 14.9613227,5.86250001 14.9967074,6.20585952 C14.998901,6.22714564 15,6.24853037 15,6.26992922 L15,24.9801056 C15,25.3252836 14.720178,25.6051056 14.375,25.6051056 C14.3536011,25.6051056 14.3322164,25.6040066 14.3109303,25.601813 L0,24.1270082 L0,24.1270082 L0,7.12302665 Z" id="path-2"></path>
+        <filter x="-6.7%" y="-4.9%" width="113.3%" height="109.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="0" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M4.375,10.8497893 L7.65625,10.6310393 C9.32345959,10.519892 10.675,11.9562349 10.675,13.8392011 C10.675,15.7221672 9.32345959,17.2168119 7.65625,17.1775834 L5.95,17.1374364 L5.95,20.1947893 L4.375,20.0897893 L4.375,10.8497893 Z M5.85735294,12.3239069 L5.85735294,15.4697893 L7.66397059,15.4697893 C8.50823529,15.4697893 9.19264706,14.7323759 9.19264706,13.8227305 C9.19264706,12.913085 8.50823529,12.2060899 7.66397059,12.2436128 L5.85735294,12.3239069 Z" id="path-4"></path>
+        <filter x="-47.6%" y="-31.3%" width="195.2%" height="162.7%" filterUnits="objectBoundingBox" id="filter-5">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="moble-新图标" transform="translate(-1264.000000, -1434.000000)">
+            <g id="编组-17备份" transform="translate(1264.000000, 1434.000000)">
+                <rect id="矩形" stroke="#979797" fill="#D8D8D8" opacity="0" x="0" y="0" width="32" height="32"></rect>
+                <g id="编组-28备份" transform="translate(2.000000, 0.000000)">
+                    <path d="M26,0.5 C26.4142136,0.5 26.7892136,0.667893219 27.0606602,0.939339828 C27.3321068,1.21078644 27.5,1.58578644 27.5,2 L27.5,2 L27.5,29.25 C27.5,29.6642136 27.3321068,30.0392136 27.0606602,30.3106602 C26.7892136,30.5821068 26.4142136,30.75 26,30.75 L26,30.75 L2,30.75 C1.58578644,30.75 1.21078644,30.5821068 0.939339828,30.3106602 C0.667893219,30.0392136 0.5,29.6642136 0.5,29.25 L0.5,29.25 L0.5,2 C0.5,1.58578644 0.667893219,1.21078644 0.939339828,0.939339828 C1.21078644,0.667893219 1.58578644,0.5 2,0.5 L2,0.5 Z" id="Rectangle-27" stroke="#DCDCDC" fill="#FAFAFA"></path>
+                    <path d="M22.225,24.175 L22.225,25.525 L4.225,25.525 L4.225,24.175 L22.225,24.175 Z M22.225,21.025 L22.225,22.375 L4.225,22.375 L4.225,21.025 L22.225,21.025 Z M15.025,8.425 L15.025,13.375 L19.975,13.375 C19.975,16.1088095 17.7588095,18.325 15.025,18.325 C12.2911905,18.325 10.075,16.1088095 10.075,13.375 C10.075,10.6411905 12.2911905,8.425 15.025,8.425 Z M15.925,7.525 C18.6588095,7.525 20.875,9.74119049 20.875,12.475 L15.925,12.475 L15.925,7.525 Z" id="形状结合" fill="#E5E5E5"></path>
+                    <g id="Rectangle-29备份-2">
+                        <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    </g>
+                    <g id="ico_ppt_small">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-5)" xlink:href="#path-4"></use>
+                        <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-4"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg width="66" height="66" viewBox="0 0 66 66" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="66" height="66" fill="white"/>
+<rect x="48" y="7" width="4" height="30" rx="0.5" transform="rotate(90 48 7)" fill="#C2D8FF"/>
+<rect width="34" height="0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 57 48)" fill="#99BEFF"/>
+<rect width="34" height="0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 45.375 48)" fill="#99BEFF"/>
+<rect width="34" height="0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 33.75 48)" fill="#99BEFF"/>
+<rect width="34" height="0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 22.125 48)" fill="#99BEFF"/>
+<rect width="34" height="0.5" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 10.5 48)" fill="#99BEFF"/>
+<rect width="47" height="0.5" transform="matrix(-1 8.74228e-08 8.74228e-08 1 57 48)" fill="#99BEFF"/>
+<rect width="6" height="21.3181" transform="matrix(-4.43736e-08 -1 -1 4.30591e-08 31.8181 45.5)" fill="#175CEB"/>
+<rect width="6" height="30.4545" transform="matrix(-4.43736e-08 -1 -1 4.30591e-08 40.9545 39.5)" fill="#66DFB0"/>
+<rect width="6" height="35.5515" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 46.0515 30)" fill="#175CEB"/>
+<rect x="48" y="27.5" width="1" height="6" transform="rotate(-90 48 27.5)" fill="#C2D8FF"/>
+<rect x="35.9643" y="21.5" width="1" height="6" transform="rotate(-90 35.9643 21.5)" fill="#C2D8FF"/>
+<rect width="6" height="23.4754" transform="matrix(-4.43736e-08 -1 -1 4.30591e-08 33.9754 24)" fill="#66DFB0"/>
+<rect width="1" height="3" transform="matrix(0 1 1 -5.72197e-08 55 52)" fill="#C2D8FF"/>
+<rect width="1" height="3" transform="matrix(0 1 1 -5.72197e-08 43.75 52)" fill="#C2D8FF"/>
+<rect width="1" height="3" transform="matrix(0 1 1 -5.72197e-08 32.5 52)" fill="#C2D8FF"/>
+<rect width="1" height="3" transform="matrix(0 1 1 -5.72197e-08 21.25 52)" fill="#C2D8FF"/>
+<rect width="1" height="3" transform="matrix(0 1 1 -5.72197e-08 10 52)" fill="#C2D8FF"/>
+<rect x="8" y="39" width="1" height="3" transform="rotate(90 8 39)" fill="#C2D8FF"/>
+<rect x="8" y="23.5" width="1" height="3" transform="rotate(90 8 23.5)" fill="#C2D8FF"/>
+<rect x="46" y="57" width="2" height="26" transform="rotate(90 46 57)" fill="#EDF4FF"/>
+</svg>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="924px" height="746px" viewBox="0 0 924 746" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>file_sheet_924</title>
+    <defs>
+        <linearGradient x1="100%" y1="45.5294345%" x2="77.0528158%" y2="45.5294345%" id="linearGradient-1">
+            <stop stop-color="#008F4B" offset="0%"></stop>
+            <stop stop-color="#00833C" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="73.6264648%" y1="0%" x2="13.2426758%" y2="96.7008464%" id="linearGradient-2">
+            <stop stop-color="#00D689" offset="0%"></stop>
+            <stop stop-color="#00AA5B" offset="100%"></stop>
+        </linearGradient>
+        <path d="M121.44,0 C127.272127,-1.66112523e-14 132,4.72787304 132,10.56 L132,147.84 L132,147.84 C132,153.672127 136.727873,158.4 142.56,158.4 L10.56,158.4 C4.72787304,158.4 -9.94391148e-15,153.672127 0,147.84 L0,10.56 C-7.14229561e-16,4.72787304 4.72787304,2.84770118e-15 10.56,0 L121.44,0 Z" id="path-3"></path>
+        <filter x="-1.4%" y="-1.3%" width="102.8%" height="102.5%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="2" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.16 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="73.92" y="110.88" width="39.6" height="15.84"></rect>
+        <filter x="-5.1%" y="-12.6%" width="120.2%" height="150.5%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="23.76" y="110.88" width="39.6" height="15.84"></rect>
+        <filter x="-5.1%" y="-12.6%" width="120.2%" height="150.5%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-9" x="73.92" y="84.48" width="39.6" height="15.84"></rect>
+        <filter x="-5.1%" y="-12.6%" width="120.2%" height="150.5%" filterUnits="objectBoundingBox" id="filter-10">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-11" x="23.76" y="84.48" width="39.6" height="15.84"></rect>
+        <filter x="-5.1%" y="-12.6%" width="120.2%" height="150.5%" filterUnits="objectBoundingBox" id="filter-12">
+            <feOffset dx="2" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="品类图标库" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="画板" transform="translate(-444.000000, -1323.000000)">
+            <g id="file_sheet_924" transform="translate(445.000000, 1323.000000)">
+                <rect id="bg" stroke="#A3F0D4" stroke-width="2" fill="#FFFFFF" fill-rule="nonzero" x="0" y="1" width="922" height="744" rx="16"></rect>
+                <g id="excel-缩略内容" transform="translate(1.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M906,3 L14,3 C10.4101491,3 7.16014913,4.45507456 4.80761184,6.80761184 C2.45507456,9.16014913 1,12.4101491 1,16 L1,503 L919,503 L919,16 C919,12.4101491 917.544925,9.16014913 915.192388,6.80761184 C912.839851,4.45507456 909.589851,3 906,3 Z" id="矩形" stroke="#A3F0D4" stroke-width="6" fill="#E0FBF1"></path>
+                    <path d="M14,5.92789927 L184,5.92789927 L184,5.92789927 L184,499.927899 L4,499.927899 L4,15.9278993 C4,10.4050518 8.4771525,5.92789927 14,5.92789927 Z" id="矩形" fill="#A3F0D4" opacity="0.400000006"></path>
+                    <text id="1" font-family="DINAlternate-Bold, DIN Alternate" font-size="56" font-weight="bold" fill="#00D689">
+                        <tspan x="79" y="88">1</tspan>
+                    </text>
+                    <text id="2" font-family="DINAlternate-Bold, DIN Alternate" font-size="56" font-weight="bold" fill="#00D689">
+                        <tspan x="79" y="214">2</tspan>
+                    </text>
+                    <text id="3" font-family="DINAlternate-Bold, DIN Alternate" font-size="56" font-weight="bold" fill="#00D689">
+                        <tspan x="79" y="340">3</tspan>
+                    </text>
+                    <text id="4" font-family="DINAlternate-Bold, DIN Alternate" font-size="56" font-weight="bold" fill="#00D689">
+                        <tspan x="79" y="464">4</tspan>
+                    </text>
+                    <path d="M436,404 L436,506 L430,506 L430,404 L436,404 Z M190,0 L190,126 L320,126 L320,132 L190,132 L190,252 L320,252 L320,258 L190,258 L190,378 L320,378 L320,384 L190,384 L190,506 L184,506 L184,384 L0,384 L0,378 L184,378 L184,258 L0,258 L0,252 L184,252 L184,132 L0,132 L0,126 L184,126 L184,0 L190,0 Z M686,0 L686,126 L922,126 L922,132 L686,132 L686,252 L922,252 L922,258 L686,258 L686,378 L922,378 L922,384 L686,384 L686,506 L680,506 L680,384 L600,384 L600,378 L680,378 L680,258 L600,258 L600,252 L680,252 L680,132 L600,132 L600,126 L680,126 L680,0 L686,0 Z M436,0 L436,100 L430,100 L430,0 L436,0 Z" id="形状结合" fill="#A3F0D4"></path>
+                </g>
+                <g id="file_sheet_transparent_150" transform="translate(372.000000, 163.000000)">
+                    <rect id="bg" fill="#FFFFFF" opacity="0" x="0" y="0" width="180" height="180"></rect>
+                    <g id="编组-6" transform="translate(13.200000, 10.800000)">
+                        <path d="M36.96,37.2071777 L143.04,37.2071777 C148.872127,37.2071777 153.6,41.9350508 153.6,47.7671777 L153.6,147.84 C153.6,153.672127 148.872127,158.4 143.04,158.4 L36.96,158.4 C31.127873,158.4 26.4,153.672127 26.4,147.84 L26.4,47.7671777 C26.4,41.9350508 31.127873,37.2071777 36.96,37.2071777 Z" id="蒙版备份" fill="url(#linearGradient-1)"></path>
+                        <g id="蒙版">
+                            <use fill="url(#linearGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                        </g>
+                        <g id="Rectangle-19-Copy-5备份-2">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                            <use fill="#A3F0D4" fill-rule="evenodd" xlink:href="#path-5"></use>
+                        </g>
+                        <g id="Rectangle-19-Copy-4备份-3">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                            <use fill="#A3F0D4" fill-rule="evenodd" xlink:href="#path-7"></use>
+                        </g>
+                        <g id="Rectangle-19-Copy-5备份">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-10)" xlink:href="#path-9"></use>
+                            <use fill="#E0FBF1" fill-rule="evenodd" xlink:href="#path-9"></use>
+                        </g>
+                        <g id="Rectangle-19-Copy-4">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-12)" xlink:href="#path-11"></use>
+                            <use fill="#E0FBF1" fill-rule="evenodd" xlink:href="#path-11"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

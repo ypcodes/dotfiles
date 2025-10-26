@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>ppt_36px</title>
+    <desc>Created with Sketch.</desc>
+    <g id="ppt_36px" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" transform="translate(3.000000, 0.000000)">
+            <path d="M0.999999988,0.00015247426 L20.5235527,0.00312931353 C20.7904407,0.00317000709 21.046239,0.109894285 21.2340161,0.299549172 L29.7106159,8.86091499 C29.8960043,9.04815727 30,9.30100218 30,9.56449512 L30,35 C30,35.5522847 29.5522847,36 29,36 L1,36 C0.44771525,36 6.75729004e-17,35.5522847 -5.42101086e-20,35 L-0.000152462637,1 C-0.000152462637,0.44771525 0.447562788,-1.0556688e-14 0.999847537,-1.0658141e-14 L1.00000001,1.16241893e-08 L0.999999988,0.00015247426 Z" id="Rectangle" fill="#FF6935" fill-rule="nonzero"></path>
+            <path d="M21,0 L30,8.99685944 L21.6,8.99999996 C21.2686292,9.0001156 20.9999063,8.7315802 20.9997907,8.40020937 L20.9997907,8.4 L21,0 Z" id="Rectangle" fill="#FFB492" fill-rule="nonzero"></path>
+            <polygon id="矩形" fill="#FFFFFF" points="6 18 24 18 24 21 6 21"></polygon>
+            <polygon id="矩形-copy-4" fill="#FFFFFF" points="6 26 24 26 24 29 6 29"></polygon>
+            <rect id="Rectangle" fill="#FFFFFF" x="23" y="18" width="1" height="11"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="6" y="18" width="1" height="11"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<svg width="66" height="66" viewBox="0 0 66 66" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="66" height="66" fill="white"/>
+<rect x="11" y="18" width="1" height="3" transform="rotate(90 11 18)" fill="#C2D8FF"/>
+<rect x="11" y="24" width="1" height="3" transform="rotate(90 11 24)" fill="#C2D8FF"/>
+<rect x="11" y="36" width="1" height="3" transform="rotate(90 11 36)" fill="#C2D8FF"/>
+<rect x="11" y="30" width="1" height="3" transform="rotate(90 11 30)" fill="#C2D8FF"/>
+<rect x="11" y="42" width="1" height="3" transform="rotate(90 11 42)" fill="#C2D8FF"/>
+<rect x="21.5" y="48" width="1" height="4.00834" transform="rotate(90 21.5 48)" fill="#C2D8FF"/>
+<rect x="36.0083" y="48" width="1" height="4.00834" transform="rotate(90 36.0083 48)" fill="#C2D8FF"/>
+<path d="M51.5 48L51.5 49L47.4917 49L47.4917 48L51.5 48Z" fill="#C2D8FF"/>
+<rect x="13" y="15" width="44" height="0.5" fill="#99BEFF"/>
+<rect x="13.5" y="15" width="30" height="0.5" transform="rotate(90 13.5 15)" fill="#99BEFF"/>
+<rect x="13" y="25" width="44" height="0.5" fill="#99BEFF"/>
+<rect x="13" y="35" width="44" height="0.5" fill="#99BEFF"/>
+<rect x="13" y="35" width="44" height="0.5" fill="#99BEFF"/>
+<rect x="13" y="45" width="44" height="0.5" fill="#99BEFF"/>
+<rect x="13.125" y="40.125" width="43.75" height="0.25" stroke="#99BEFF" stroke-width="0.25" stroke-dasharray="2 2"/>
+<rect x="13.125" y="30.125" width="43.75" height="0.25" stroke="#99BEFF" stroke-width="0.25" stroke-dasharray="2 2"/>
+<rect x="13.125" y="20.125" width="43.75" height="0.25" stroke="#99BEFF" stroke-width="0.25" stroke-dasharray="2 2"/>
+<rect width="7" height="7" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 53 35)" fill="#175CEB"/>
+<path d="M49.5 28V25" stroke="#175CEB" stroke-width="0.5"/>
+<path d="M49.5 39V35" stroke="#175CEB" stroke-width="0.5"/>
+<path d="M34 28V24" stroke="#66DFB0" stroke-width="0.5"/>
+<path d="M19.5 24V18" stroke="#66DFB0" stroke-width="0.5"/>
+<path d="M34 35V29" stroke="#66DFB0" stroke-width="0.5"/>
+<path d="M19.5 30V24" stroke="#66DFB0" stroke-width="0.5"/>
+<rect width="3" height="6" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 22.5 25)" fill="#66DFB0"/>
+<rect width="3" height="6" transform="matrix(-4.37114e-08 -1 -1 4.37114e-08 37 31)" fill="#66DFB0"/>
+<path d="M46 52C46.2761 52 46.5 52.2239 46.5 52.5L46.5 55.5C46.5 55.7761 46.2761 56 46 56L17 56C16.7239 56 16.5 55.7761 16.5 55.5L16.5 52.5C16.5 52.2239 16.7239 52 17 52L46 52Z" fill="#C2D8FF"/>
+</svg>

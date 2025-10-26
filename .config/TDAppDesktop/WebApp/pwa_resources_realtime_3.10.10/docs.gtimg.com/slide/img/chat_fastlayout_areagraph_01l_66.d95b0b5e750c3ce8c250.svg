@@ -1,0 +1,31 @@
+<svg width="66" height="66" viewBox="0 0 66 66" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="66" height="66" fill="white"/>
+<rect x="14.125" y="14.25" width="35" height="0.5" fill="#99BEFF"/>
+<rect x="14.125" y="22.2" width="35" height="0.5" fill="#99BEFF"/>
+<rect x="14.125" y="30.15" width="35" height="0.5" fill="#99BEFF"/>
+<rect x="14.125" y="38.1" width="35" height="0.5" fill="#99BEFF"/>
+<rect x="14.125" y="46.05" width="35" height="0.5" fill="#99BEFF"/>
+<rect x="14.125" y="54" width="35" height="0.5" fill="#99BEFF"/>
+<rect x="14.625" y="14.25" width="40.25" height="0.5" transform="rotate(90 14.625 14.25)" fill="#99BEFF"/>
+<rect x="12" y="18" width="1" height="3" transform="rotate(90 12 18)" fill="#C2D8FF"/>
+<rect x="12" y="26.0258" width="1" height="3" transform="rotate(90 12 26.0258)" fill="#C2D8FF"/>
+<rect x="12" y="34.0517" width="1" height="3" transform="rotate(90 12 34.0517)" fill="#C2D8FF"/>
+<rect x="12" y="42.0776" width="1" height="3" transform="rotate(90 12 42.0776)" fill="#C2D8FF"/>
+<rect x="12" y="50.1035" width="1" height="3" transform="rotate(90 12 50.1035)" fill="#C2D8FF"/>
+<rect x="18.1516" y="57" width="1" height="4.02655" transform="rotate(90 18.1516 57)" fill="#C2D8FF"/>
+<rect x="25.8949" y="57" width="1" height="4.02655" transform="rotate(90 25.8949 57)" fill="#C2D8FF"/>
+<rect x="33.6382" y="57" width="1" height="4.02655" transform="rotate(90 33.6382 57)" fill="#C2D8FF"/>
+<rect x="41.3817" y="57" width="1" height="4.02655" transform="rotate(90 41.3817 57)" fill="#C2D8FF"/>
+<rect x="49.125" y="57" width="1" height="4.02655" transform="rotate(90 49.125 57)" fill="#C2D8FF"/>
+<rect x="7.375" y="41.5" width="2" height="20" transform="rotate(-180 7.375 41.5)" fill="#C2D8FF"/>
+<rect x="60.75" y="26.25" width="13.5" height="9.5" transform="rotate(90 60.75 26.25)" fill="#F1F4FF" stroke="#99BEFF" stroke-width="0.5"/>
+<rect x="53" y="28" width="2" height="2" fill="#5C98FF"/>
+<rect x="56" y="28.5" width="3" height="1" fill="#5C98FF"/>
+<rect x="56" y="32.5" width="3" height="1" fill="#5C98FF"/>
+<rect x="56" y="36.5" width="3" height="1" fill="#5C98FF"/>
+<rect x="53" y="32" width="2" height="2" fill="#5C98FF"/>
+<rect x="53" y="36" width="2" height="2" fill="#5C98FF"/>
+<path d="M47.5 7.25C47.7761 7.25 48 7.47386 48 7.75L48 10.75C48 11.0261 47.7761 11.25 47.5 11.25L18.5 11.25C18.2239 11.25 18 11.0261 18 10.75L18 7.75C18 7.47386 18.2239 7.25 18.5 7.25L47.5 7.25Z" fill="#C2D8FF"/>
+<path d="M14.625 54V37.225L24 42.6109L31.6219 30.65L39.4008 36.5142H49.125V54H14.625Z" fill="#66DFB0"/>
+<path d="M14.625 54V43.3118L24 49.3717L31.625 38.7462L49.125 49.6468V54H14.625Z" fill="#175CEB"/>
+</svg>

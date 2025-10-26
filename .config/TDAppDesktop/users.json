@@ -1,0 +1,103 @@
+{
+	"users": [
+		{
+			"uid": "144115216894497334",
+			"uin": "0",
+			"utype": "wx",
+			"nick": "Essenzption",
+			"avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEJVqy0ibxic5M0JhQZxCdUpjk96CpIARm3k21oIuXzYpkj7Mmjd8cCKfyeib9HfGTrcV66UPezose8PvptcAKa8edcUXTnibgfZVt63ic5Fu3RiaGqQ/132",
+			"autoLogin": true,
+			"expiration": 0,
+			"url": "https://docs.qq.com/desktop",
+			"cgi_user": {
+				"uid": "144115216894497334",
+				"domain_id": "144115216894497334",
+				"tinyid": "144115216894497334",
+				"toid": "144115216894497334",
+				"login": true,
+				"req_uid": "",
+				"qq_avatar": "",
+				"wx_avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEJVqy0ibxic5M0JhQZxCdUpjk96CpIARm3k21oIuXzYpkj7Mmjd8cCKfyeib9HfGTrcV66UPezose8PvptcAKa8edcUXTnibgfZVt63ic5Fu3RiaGqQ/132",
+				"uin": 0,
+				"domain": "144115216894497334",
+				"avatar": "https://thirdwx.qlogo.cn/mmopen/vi_32/PiajxSqBRaEJVqy0ibxic5M0JhQZxCdUpjk96CpIARm3k21oIuXzYpkj7Mmjd8cCKfyeib9HfGTrcV66UPezose8PvptcAKa8edcUXTnibgfZVt63ic5Fu3RiaGqQ/132",
+				"nick": "Essenzption",
+				"wx_openid": "oy6SixJ_T7q8adTYxi6Es3QDSErU",
+				"email": "",
+				"phone": "",
+				"uid_source": 2,
+				"wx_nick": "Essenzption",
+				"client_ip": "",
+				"qq_nick": "",
+				"work_id": "",
+				"corp_id": "",
+				"edit_doc_time": 1678715955,
+				"create_doc_time": 1583763958,
+				"login_time": 1761465583,
+				"app_flag": 0,
+				"credit_level": 0,
+				"credit_msg": "",
+				"credit_time": 0,
+				"third_appid": "",
+				"third_uid": "",
+				"expired": 0,
+				"third_source": 0,
+				"wy_bind_uid": [],
+				"corp_name": "",
+				"is_grayed": false,
+				"english_name": "",
+				"login_type": 2,
+				"upgrade_status": 0,
+				"wechat_official_account": null,
+				"is_default": false,
+				"vip_info": {
+					"user": {
+						"uid": "144115216894497334",
+						"login_type": 1
+					},
+					"drive_space": 1,
+					"vip_level": 0,
+					"score": 0,
+					"max_score": 0,
+					"collaborate_limit": {
+						"max_user_number": 0
+					},
+					"recycle_limit": {
+						"max_valid": 0
+					},
+					"expansion": {
+						"status": 0,
+						"begin_time": 0,
+						"end_time": 0
+					},
+					"sogou_rights": {
+						"recording_time": -1
+					},
+					"begin_time": 0,
+					"end_time": 0,
+					"is_vip": false,
+					"old_vip": false,
+					"super": {
+						"begin_time": 0,
+						"end_time": 0,
+						"status": 1
+					},
+					"super_vip": {
+						"begin_time": 0,
+						"end_time": 0,
+						"status": 1
+					}
+				},
+				"vip": "{\"vip_level\":1,\"avatar_frame_url\":\"\",\"renewal_status\":0,\"expired_status\":0,\"corp_vip_level\":0,\"cursor_id\":\"\",\"cursor\":\"\",\"badge_url\":\"\",\"cursor_thumbnail\":\"\",\"anonymous_status\":0}",
+				"cgicode": 0,
+				"retcode": 0,
+				"ret": 0,
+				"msg": "success",
+				"create_time": 1598820766
+			},
+			"qq_avatar": "",
+			"pwd": "/home/peng/.config/TDAppDesktop/users/144115216894497334"
+		}
+	],
+	"lastOpenUsers": []
+}

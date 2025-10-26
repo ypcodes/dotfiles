@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="34px" height="26px" viewBox="0 0 34 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>vip_smalldiamond_normal</title>
+    <defs>
+        <linearGradient x1="19.7773138%" y1="21.1191512%" x2="78.368128%" y2="60.7938526%" id="linearGradient-1">
+            <stop stop-color="#E4BD80" offset="13%"></stop>
+            <stop stop-color="#F6DDB1" offset="57%"></stop>
+            <stop stop-color="#E4C594" offset="100%"></stop>
+        </linearGradient>
+        <polygon id="path-2" points="9.50000079 2.00105147 2.00000079 9.33508579 17.0000008 24 32.0000008 9.33193136 24.5000008 2"></polygon>
+        <linearGradient x1="21.8647522%" y1="72.3020811%" x2="70.8603014%" y2="17.3085175%" id="linearGradient-4">
+            <stop stop-color="#DB8F1C" offset="30%"></stop>
+            <stop stop-color="#DEA035" offset="54%"></stop>
+            <stop stop-color="#D7922A" offset="88%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="设计稿" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="vip_smalldiamond_normal">
+            <path d="M8.1016972,0.571104941 C8.47536737,0.205703622 8.97722542,0.00108811029 9.49986059,0.00105147445 L24.4998606,0 C25.0224936,0 25.5243784,0.204506809 25.8980994,0.56985303 L33.3980994,7.9017844 C33.4088345,7.91227899 33.4194512,7.92289412 33.4299473,7.93362777 C34.2022091,8.72336544 34.188042,9.98961614 33.3983044,10.7618779 L18.3983044,25.4299465 C17.6210928,26.1899594 16.3791442,26.1900261 15.6018509,25.4300968 L0.601850941,10.7651826 C0.591133246,10.7547044 0.580533681,10.7441059 0.570054257,10.7333894 C-0.20220749,9.94365171 -0.188040463,8.677401 0.601697198,7.90513926 L8.1016972,0.571104941 Z" id="路径" fill="#FFFFFF" fill-rule="nonzero"></path>
+            <mask id="mask-3" fill="white">
+                <use xlink:href="#path-2"></use>
+            </mask>
+            <use id="路径" fill="url(#linearGradient-1)" fill-rule="nonzero" xlink:href="#path-2"></use>
+            <polygon id="路径" fill="url(#linearGradient-4)" fill-rule="nonzero" mask="url(#mask-3)" points="15.1747906 4 14.3218317 9.00429092 6.00000079 9.00429092 10.0309366 13.0163055 13.6286068 13.0163055 12.4916762 19.6457842 16.9096782 24 18.7484485 13.0163055 25.0000008 13.0163055"></polygon>
+        </g>
+    </g>
+</svg>

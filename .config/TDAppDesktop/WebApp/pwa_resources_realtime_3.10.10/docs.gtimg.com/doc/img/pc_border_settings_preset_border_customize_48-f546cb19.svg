@@ -1,0 +1,44 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 2.00098C0 0.896408 0.895431 0.000976562 2 0.000976562H46C47.1046 0.000976562 48 0.896407 48 2.00098V46.001C48 47.1055 47.1046 48.001 46 48.001H2C0.895431 48.001 0 47.1055 0 46.001V2.00098Z" fill="white" style="fill:white;fill-opacity:1;"/>
+<path d="M2 0.500977H46C46.8284 0.500977 47.5 1.17255 47.5 2.00098V46.001C47.5 46.8294 46.8284 47.501 46 47.501H2C1.17157 47.501 0.5 46.8294 0.5 46.001V2.00098C0.500001 1.17255 1.17157 0.500977 2 0.500977Z" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<g clip-path="url(#clip0_96584_12015)">
+<path d="M15 11.501L23 11.501" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<line y1="-0.5" x2="32" y2="-0.5" transform="matrix(1 0 0.0381961 0.99927 13 15.001)" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<path d="M13 17.501L21 17.501" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+</g>
+<g clip-path="url(#clip1_96584_12015)">
+<path d="M15 25.001L23 25.001" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<line y1="-0.5" x2="32" y2="-0.5" transform="matrix(1 0 0.0381961 0.99927 13 28.501)" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<path d="M13 31.501L21 31.501" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+</g>
+<g clip-path="url(#clip2_96584_12015)">
+<path d="M28 11.501L36 11.501" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<line y1="-0.5" x2="32" y2="-0.5" transform="matrix(1 0 0.0381961 0.99927 26 15.001)" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<path d="M26 17.501L34 17.501" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+</g>
+<g clip-path="url(#clip3_96584_12015)">
+<path d="M28 25.001L36 25.001" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<line y1="-0.5" x2="32" y2="-0.5" transform="matrix(1 0 0.0381961 0.99927 26 28.501)" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+<path d="M26 31.501L34 31.501" stroke="black" stroke-opacity="0.12" style="stroke:black;stroke-opacity:0.12;"/>
+</g>
+<path d="M6 6.00098H42V33.001" stroke="#454D5A" style="stroke:#454D5A;stroke:color(display-p3 0.2706 0.3020 0.3529);stroke-opacity:1;"/>
+<path d="M40 6.00098V42.001" stroke="#454D5A" style="stroke:#454D5A;stroke:color(display-p3 0.2706 0.3020 0.3529);stroke-opacity:1;"/>
+<path d="M9.25 6.00098L8.11669 7.32791C7.45324 8.10471 7.37524 9.22381 7.92452 10.0851L9.20361 12.0909C9.68935 12.8526 9.68935 13.8268 9.20361 14.5885L7.79639 16.7952C7.31065 17.5569 7.31065 18.5311 7.79639 19.2928L9.20361 21.4995C9.68935 22.2612 9.68935 23.2354 9.20361 23.9971L7.81288 26.1779C7.3187 26.9528 7.32797 27.9463 7.83653 28.7119L9.1463 30.6836C9.66357 31.4623 9.66357 32.4752 9.1463 33.2539L7.74316 35.3661C7.28339 36.0582 7.22839 36.9433 7.59892 37.687L9.25 41.001" stroke="#454D5A" style="stroke:#454D5A;stroke:color(display-p3 0.2706 0.3020 0.3529);stroke-opacity:1;" stroke-linecap="square"/>
+<rect x="12" y="39.001" width="3" height="3" fill="#454D5A" style="fill:#454D5A;fill:color(display-p3 0.2706 0.3020 0.3529);fill-opacity:1;"/>
+<rect x="17" y="39.001" width="3" height="3" fill="#454D5A" style="fill:#454D5A;fill:color(display-p3 0.2706 0.3020 0.3529);fill-opacity:1;"/>
+<rect x="22" y="39.001" width="3" height="3" fill="#454D5A" style="fill:#454D5A;fill:color(display-p3 0.2706 0.3020 0.3529);fill-opacity:1;"/>
+<defs>
+<clipPath id="clip0_96584_12015">
+<rect width="10" height="9.5" fill="white" style="fill:white;fill-opacity:1;" transform="translate(13 10.001)"/>
+</clipPath>
+<clipPath id="clip1_96584_12015">
+<rect width="10" height="9.5" fill="white" style="fill:white;fill-opacity:1;" transform="translate(13 23.501)"/>
+</clipPath>
+<clipPath id="clip2_96584_12015">
+<rect width="10" height="9.5" fill="white" style="fill:white;fill-opacity:1;" transform="translate(26 10.001)"/>
+</clipPath>
+<clipPath id="clip3_96584_12015">
+<rect width="10" height="9.5" fill="white" style="fill:white;fill-opacity:1;" transform="translate(26 23.501)"/>
+</clipPath>
+</defs>
+</svg>

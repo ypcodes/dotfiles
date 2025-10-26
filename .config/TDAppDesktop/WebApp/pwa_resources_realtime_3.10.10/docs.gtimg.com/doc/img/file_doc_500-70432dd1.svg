@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="500px" height="400px" viewBox="0 0 500 400" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>file_doc_500</title>
+    <defs>
+        <linearGradient x1="100%" y1="29.7818714%" x2="83.6208606%" y2="29.7818714%" id="linearGradient-1">
+            <stop stop-color="#1E6FFF" offset="0%"></stop>
+            <stop stop-color="#144DEB" offset="100%"></stop>
+        </linearGradient>
+        <radialGradient cx="76.9874855%" cy="0%" fx="76.9874855%" fy="0%" r="139.106708%" gradientTransform="translate(0.769875,0.000000),scale(1.000000,0.890674),rotate(121.076492),translate(-0.769875,-0.000000)" id="radialGradient-2">
+            <stop stop-color="#34A4FF" offset="0%"></stop>
+            <stop stop-color="#1E6FFF" offset="99.9234586%"></stop>
+        </radialGradient>
+        <path d="M73.9269518,5.88 C76.7581741,5.88 79.0533333,8.17515921 79.0533333,11.0063816 L79.0526667,86.414 L79.201418,86.4148923 L79.201418,86.4148923 C79.201418,89.2565069 81.278924,91.612894 83.9979265,92.0480441 L83.9983776,92.12 L12.3130482,92.12 C9.48182587,92.12 7.18666667,89.8248408 7.18666667,86.9936184 L7.18666667,11.0063816 C7.18666667,8.17515921 9.48182587,5.88 12.3130482,5.88 L73.9269518,5.88 Z" id="path-3"></path>
+        <filter x="-1.3%" y="-1.2%" width="102.6%" height="102.3%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 0.24 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <rect id="path-5" x="23.0320736" y="66.2964258" width="43.12" height="8.624"></rect>
+        <filter x="-9.3%" y="-46.4%" width="123.2%" height="216.0%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.0901960784   0 0 0 0 0.360784314   0 0 0 0 0.921568627  0 0 0 0.801491477 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <rect id="path-7" x="23.0320736" y="51.8437865" width="43.12" height="8.624"></rect>
+        <filter x="-9.3%" y="-46.4%" width="123.2%" height="216.0%" filterUnits="objectBoundingBox" id="filter-8">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.2 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="品类图标库" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="腾讯文档品类图标_分享切图库" transform="translate(-1408.000000, -7029.000000)">
+            <g id="file_doc_500" transform="translate(1408.000000, 7029.000000)">
+                <rect id="bg" fill="#FFFFFF" fill-rule="nonzero" x="0" y="0" width="500" height="400"></rect>
+                <rect id="bg" stroke="#AFD1FF" stroke-width="1.08225108" fill="#EBF6FF" fill-rule="nonzero" x="0.54112554" y="0.54112554" width="498.917749" height="397.917749" rx="8.65800866"></rect>
+                <rect id="矩形" fill="#1E6FFF" fill-rule="nonzero" opacity="0.239999995" x="45" y="70" width="396.103896" height="3.24675325"></rect>
+                <path d="M167.242,261 L167.242,264.246 L45,264.246913 L45,261.00016 L167.242,261 Z M441.103896,261.00016 L441.103896,264.246913 L318.757,264.246 L318.757,261 L441.103896,261.00016 Z M167.242,196 L167.242,199.246 L45,199.246913 L45,196.00016 L167.242,196 Z M441.103896,196.00016 L441.103896,199.246913 L318.757,199.246 L318.757,196 L441.103896,196.00016 Z M167.242,133 L167.242,136.246 L45,136.246913 L45,133.00016 L167.242,133 Z M441.103896,133.00016 L441.103896,136.246913 L318.757,136.246 L318.757,133 L441.103896,133.00016 Z" id="形状结合" fill="#1E6FFF" fill-rule="nonzero" opacity="0.159999996"></path>
+                <rect id="矩形" fill="#1E6FFF" fill-rule="nonzero" opacity="0.239999995" x="45" y="323" width="324.675325" height="3.24675325"></rect>
+                <g id="file_doc_transparent_150" transform="translate(200.000000, 149.000000)">
+                    <rect id="bg" fill="#FFFFFF" opacity="0" x="0" y="0" width="98" height="98"></rect>
+                    <path d="M26.5758175,26.0531979 L85.4256184,26.0531979 C88.2568408,26.0531979 90.552,28.3483571 90.552,31.1795795 L90.552,86.9936184 C90.552,89.8248408 88.2568408,92.12 85.4256184,92.12 L26.5758175,92.12 C23.7445951,92.12 21.4494359,89.8248408 21.4494359,86.9936184 L21.4494359,31.1795795 C21.4494359,28.3483571 23.7445951,26.0531979 26.5758175,26.0531979 Z" id="背景板" fill="url(#linearGradient-1)"></path>
+                    <g id="前景板">
+                        <use fill="url(#radialGradient-2)" fill-rule="evenodd" xlink:href="#path-3"></use>
+                        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    </g>
+                    <g id="形状2">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                        <use fill="#B3D9FF" fill-rule="evenodd" xlink:href="#path-5"></use>
+                    </g>
+                    <g id="形状1">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-8)" xlink:href="#path-7"></use>
+                        <use fill="#D3F3FF" fill-rule="evenodd" xlink:href="#path-7"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

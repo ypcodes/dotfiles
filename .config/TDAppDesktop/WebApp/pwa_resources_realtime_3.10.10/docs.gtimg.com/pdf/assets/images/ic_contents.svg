@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>bottombar/catalog</title>
+    <g id="bottombar/catalog" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Word-底部栏-目录">
+            <g id="Group复制-5备份-2" opacity="0" fill="#000000" fill-rule="nonzero">
+                <rect id="Rectangle" opacity="0.0599999987" x="0" y="0" width="24" height="24"></rect>
+                <rect id="Rectangle" opacity="0.100000001" x="3" y="3" width="18" height="18"></rect>
+                <rect id="Rectangle" opacity="0.119999997" x="4" y="4" width="16" height="16"></rect>
+            </g>
+            <path d="M5.5,4 L19.5,4 C19.7761424,4 20,4.22385763 20,4.5 L20,19.5 C20,19.7761424 19.7761424,20 19.5,20 L5.5,20 C5.22385763,20 5,19.7761424 5,19.5 L5,4.5 C5,4.22385763 5.22385763,4 5.5,4 Z M6.25,5.25 L6.25,18.75 L18.75,18.75 L18.75,5.25 L6.25,5.25 Z" id="矩形备份-2" fill="#464D5A"></path>
+            <rect id="矩形" fill="#464D5A" fill-rule="nonzero" x="11" y="7.75" width="6" height="1.5"></rect>
+            <rect id="矩形" fill="#464D5A" fill-rule="nonzero" x="8" y="7.75" width="1.5" height="1.5"></rect>
+            <rect id="矩形" fill="#464D5A" fill-rule="nonzero" x="11" y="11.25" width="6" height="1.5"></rect>
+            <rect id="矩形" fill="#464D5A" fill-rule="nonzero" x="8" y="11.25" width="1.5" height="1.5"></rect>
+            <rect id="矩形" fill="#464D5A" fill-rule="nonzero" x="11" y="14.75" width="6" height="1.5"></rect>
+            <rect id="矩形" fill="#464D5A" fill-rule="nonzero" x="8" y="14.75" width="1.5" height="1.5"></rect>
+        </g>
+    </g>
+</svg>

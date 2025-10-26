@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksheet=self.webpackChunksheet||[]).push([["20215"],{130417:function(e,t,o){o.r(t),o.d(t,{showChangeModel:function(){return d}});var n=o(209787),a=o(989398),i=o(485584),d=()=>(0,n.__awaiter)(void 0,void 0,void 0,function*(){a.default.confirm({title:i.ag.t("form_view_need_update_title"),content:i.ag.t("form_view_need_update_info"),okText:i.ag.t("form_view_need_update_footer"),onOk:()=>{window.location.reload()},className:"show-change-model"})})}}]);
+//# sourceMappingURL=20215.50b2cdd151534830.js.map

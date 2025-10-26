@@ -1,0 +1,45 @@
+{
+  "tmall": {
+    "htmlHash": "index-1760345078682",
+    "releaseVersion": "",
+    "publishAt": 1761142849463,
+    "latestLocalEditPwa": ""
+  },
+  "desktop": {
+    "htmlHash": "pc-1ca8cc2f95",
+    "releaseVersion": "hotfix_20251023_1431_desktop_9cbf98d5",
+    "publishAt": 1761206070090,
+    "latestLocalEditPwa": ""
+  },
+  "slide": {
+    "htmlHash": "slide-edit.fdc51b958e7128259b6ee1eca312c0c4",
+    "releaseVersion": "",
+    "publishAt": 1760096864185,
+    "latestLocalEditPwa": "release/20240812"
+  },
+  "mind": {},
+  "pdf": {
+    "htmlHash": "pc-27d24d7155",
+    "releaseVersion": "",
+    "publishAt": 1760181378631,
+    "latestLocalEditPwa": ""
+  },
+  "doc": {
+    "htmlHash": "pc-0efe5c372d",
+    "releaseVersion": "",
+    "publishAt": 1761210149901,
+    "latestLocalEditPwa": ""
+  },
+  "dc": {
+    "htmlHash": "metadata.32b9c342a1aa3d6fa46c4cfee08218d7",
+    "releaseVersion": "hotfix_20251024_1701_74045f58",
+    "publishAt": 1761301204375,
+    "latestLocalEditPwa": ""
+  },
+  "sheet": {
+    "htmlHash": "pc-3b913149ce",
+    "releaseVersion": "",
+    "publishAt": 1760945094279,
+    "latestLocalEditPwa": ""
+  }
+}

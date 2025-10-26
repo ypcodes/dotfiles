@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpdf=self.webpackChunkpdf||[]).push([["984"],{44220:function(t,n,e){e.r(n),e.d(n,{ExitDocumentHandler:function(){return a}});var u=e(93323),r=e(40845),c=e(87092),o=e(90494),i=e(25205),f=e(55291),a=function(){function t(){(0,u._)(this,t)}return t.prototype.exitDocument=function(){o.v.exitCurrentDocument()},t}();a=(0,r.__decorate)([(0,c.L)({name:f.DT.EXIT_DOCUMENT,adapters:[i.C.PDF_VIEWER]})],a)}}]);
+//# sourceMappingURL=exit-document-handler.86d5ccec61f81871.js.map

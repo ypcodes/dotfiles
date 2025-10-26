@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+    <defs>
+        <filter id="prefix__d" width="111.2%" height="110.1%" x="-5.6%" y="-5.1%" filterUnits="objectBoundingBox">
+            <feGaussianBlur in="SourceAlpha" result="shadowBlurInner1" stdDeviation=".5"/>
+            <feOffset dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"/>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" k2="-1" k3="1" operator="arithmetic" result="shadowInnerInner1"/>
+            <feColorMatrix in="shadowInnerInner1" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.24 0"/>
+        </filter>
+        <filter id="prefix__e" width="180.8%" height="302.1%" x="-20.2%" y="-50.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <filter id="prefix__g" width="180.8%" height="302.1%" x="-40.4%" y="-50.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <filter id="prefix__i" width="180.8%" height="302.1%" x="-20.2%" y="-50.5%" filterUnits="objectBoundingBox">
+            <feOffset dx="1" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <filter id="prefix__k" width="180.8%" height="302.1%" x="-40.4%" y="-50.5%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation=".5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+        </filter>
+        <path id="prefix__c" d="M15.223 0c.703 0 1.274.57 1.274 1.274v17.203c0 .728.59 1.32 1.32 1.32H1.274C.57 19.796 0 19.225 0 18.521V1.274C0 .57.57 0 1.274 0h13.949z"/>
+        <path id="prefix__f" d="M9.238 13.857H14.187V15.837H9.238z"/>
+        <path id="prefix__h" d="M2.969 13.857H7.917999999999999V15.837H2.969z"/>
+        <path id="prefix__j" d="M9.238 10.558H14.187V12.538H9.238z"/>
+        <path id="prefix__l" d="M2.969 10.558H7.917999999999999V12.538H2.969z"/>
+        <linearGradient id="prefix__a" x1="100%" x2="76.38%" y1="45.529%" y2="45.529%">
+            <stop offset="0%" stop-color="#009F57"/>
+            <stop offset="100%" stop-color="#00732E"/>
+        </linearGradient>
+        <linearGradient id="prefix__b" x1="67.797%" x2="27.915%" y1="-25.675%" y2="72.628%">
+            <stop offset=".029%" stop-color="#00CEAE"/>
+            <stop offset="100%" stop-color="#00A558"/>
+        </linearGradient>
+    </defs>
+    <g fill="none" fill-rule="evenodd" transform="translate(1.375 1.375)">
+        <path fill="url(#prefix__a)" d="M4.574 4.62h13.288c.704 0 1.274.57 1.274 1.273v12.63c0 .703-.57 1.273-1.274 1.273H4.574c-.704 0-1.275-.57-1.275-1.274V5.893c0-.703.57-1.274 1.275-1.274z"/>
+        <use fill="url(#prefix__b)" xlink:href="#prefix__c"/>
+        <use fill="#000" filter="url(#prefix__d)" xlink:href="#prefix__c"/>
+        <use fill="#000" filter="url(#prefix__e)" xlink:href="#prefix__f"/>
+        <use fill="#9BF7C1" xlink:href="#prefix__f"/>
+        <use fill="#000" filter="url(#prefix__g)" xlink:href="#prefix__h"/>
+        <use fill="#B2F8EA" xlink:href="#prefix__h"/>
+        <g>
+            <use fill="#000" filter="url(#prefix__i)" xlink:href="#prefix__j"/>
+            <use fill="#B2F8EA" xlink:href="#prefix__j"/>
+        </g>
+        <g>
+            <use fill="#000" filter="url(#prefix__k)" xlink:href="#prefix__l"/>
+            <use fill="#E0FFF9" xlink:href="#prefix__l"/>
+        </g>
+    </g>
+</svg>
