@@ -1,2 +1,17 @@
 2025/10/26-15:59:49.637 438ad Creating DB /home/peng/.config/TDAppDesktop/users/144115216894497334/IndexedDB/https_docs.qq.com_0.indexeddb.leveldb since it was missing.
 2025/10/26-15:59:49.694 438ad Reusing MANIFEST /home/peng/.config/TDAppDesktop/users/144115216894497334/IndexedDB/https_docs.qq.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/10/26-16:04:51.927 4390e Level-0 table #5: started
+2025/10/26-16:04:52.098 4390e Level-0 table #5: 373339 bytes OK
+2025/10/26-16:04:52.123 4390e Delete type=0 #3
+2025/10/26-16:04:52.125 4390e Manual compaction at level-0 from '\x00\x07\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x08\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/10/26-16:05:45.669 4390f Manual compaction at level-0 from '\x00\x0a\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0b\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/10/26-16:05:45.709 43910 Level-0 table #7: started
+2025/10/26-16:05:45.882 43910 Level-0 table #7: 478155 bytes OK
+2025/10/26-16:05:46.022 43910 Delete type=0 #4
+2025/10/26-16:05:46.029 438ad Manual compaction at level-0 from '\x00\x0b\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x0c\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/10/26-16:05:46.669 4390e Compacting 1@1 + 1@2 files
+2025/10/26-16:05:46.853 4390e Generated table #8@1: 4981 keys, 389661 bytes
+2025/10/26-16:05:46.853 4390e Compacted 1@1 + 1@2 files => 389661 bytes
+2025/10/26-16:05:46.909 4390e compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/10/26-16:05:46.910 4390e Delete type=2 #5
+2025/10/26-16:05:46.910 4390e Delete type=2 #7

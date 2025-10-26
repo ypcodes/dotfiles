@@ -1,2 +1,17 @@
 2025/10/26-15:59:46.658 438ad Creating DB /home/peng/.config/TDAppDesktop/users/144115216894497334/Session Storage since it was missing.
 2025/10/26-15:59:46.707 438ad Reusing MANIFEST /home/peng/.config/TDAppDesktop/users/144115216894497334/Session Storage/MANIFEST-000001
+2025/10/26-16:02:49.413 4390e Level-0 table #5: started
+2025/10/26-16:02:49.874 4390e Level-0 table #5: 18468 bytes OK
+2025/10/26-16:02:50.165 4390e Delete type=0 #3
+2025/10/26-16:04:09.030 438ad Level-0 table #7: started
+2025/10/26-16:04:09.066 438ad Level-0 table #7: 20368 bytes OK
+2025/10/26-16:04:09.093 438ad Delete type=0 #4
+2025/10/26-16:06:19.261 438af Level-0 table #9: started
+2025/10/26-16:06:19.280 438af Level-0 table #9: 23723 bytes OK
+2025/10/26-16:06:19.313 438af Delete type=0 #6
+2025/10/26-16:14:58.060 438af Level-0 table #11: started
+2025/10/26-16:14:58.149 438af Level-0 table #11: 20158 bytes OK
+2025/10/26-16:14:58.248 438af Delete type=0 #8
+2025/10/26-16:15:58.059 438af Level-0 table #13: started
+2025/10/26-16:15:58.704 438af Level-0 table #13: 17067 bytes OK
+2025/10/26-16:15:58.754 438af Delete type=0 #10

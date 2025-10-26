@@ -1,2 +1,6 @@
 2025/10/26-15:58:44.262 438ad Creating DB /home/peng/.config/TDAppDesktop/IndexedDB/app-files_docs.qq.com_0.indexeddb.leveldb since it was missing.
 2025/10/26-15:58:44.306 438ad Reusing MANIFEST /home/peng/.config/TDAppDesktop/IndexedDB/app-files_docs.qq.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/10/26-16:17:56.592 438af Level-0 table #5: started
+2025/10/26-16:17:56.756 438af Level-0 table #5: 117943 bytes OK
+2025/10/26-16:17:56.822 438af Delete type=0 #3
+2025/10/26-16:17:56.824 438af Manual compaction at level-0 from (begin) .. (end); will stop at (end)

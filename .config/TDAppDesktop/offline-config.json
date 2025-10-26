@@ -1,0 +1,175 @@
+{
+	"config_Prod": {
+		"Offline": {
+			"Mobile_144115216894497334_version": "323352a8-9ad9-4cec-8a69-01da1731e1a1",
+			"Mobile_144115216894497334": {
+				"preload_config": {
+					"domainWhiteList": [
+						{
+							"domainName": "docs.qq.com",
+							"enablePreload": true,
+							"preloadUrlPath": "/preload/index.html",
+							"priorityMap": {
+								"preloadFromWeb": 1,
+								"preloadFromAIO": 5
+							}
+						}
+					]
+				},
+				"offline_config": {
+					"force_update_interval_in_second": 180
+				},
+				"t_sheet": [
+					{
+						"version": "2.6",
+						"bid": "4390",
+						"dver": "2.6.0"
+					},
+					{
+						"version": "2.7",
+						"bid": "4311",
+						"dver": "2.7.0"
+					},
+					{
+						"version": "2.8",
+						"bid": "4800",
+						"dver": "2.8.0"
+					},
+					{
+						"version": "2.10",
+						"bid": "5004",
+						"dver": "2.10.0"
+					},
+					{
+						"version": "2.11",
+						"bid": "5210",
+						"dver": "2.11.0"
+					},
+					{
+						"version": "3.0",
+						"bid": "5250",
+						"dver": "3.0.0",
+						"createDefault": "1",
+						"localEditDefault": "1"
+					}
+				],
+				"t_docs": [
+					{
+						"version": "3.0",
+						"bid": "4885",
+						"dver": "3.0.0",
+						"createDefault": "1",
+						"localEditDefault": "1"
+					}
+				],
+				"t_slide": [
+					{
+						"version": "1.0",
+						"bid": "4427",
+						"dver": "1.0.0"
+					},
+					{
+						"version": "3.0",
+						"bid": "5461",
+						"dver": "3.0.0",
+						"localEditDefault": "1",
+						"createDefault": "1"
+					}
+				],
+				"t_drive": [
+					{
+						"version": "1.0",
+						"bid": "5835",
+						"dver": "1.0.0",
+						"createDefault": "1"
+					}
+				],
+				"t_pdf": [
+					{
+						"version": "1.0",
+						"bid": "5416",
+						"dver": "1.0.0",
+						"createDefault": "1",
+						"localEditDefault": "1"
+					}
+				],
+				"t_aio": [
+					{
+						"version": "1.0",
+						"bid": "5837",
+						"dver": "1.0.0",
+						"createDefault": "1",
+						"localEditDefault": "1"
+					}
+				],
+				"t_smartsheet": [
+					{
+						"version": "3.0",
+						"bid": "5590",
+						"dver": "3.0.0",
+						"createDefault": "1"
+					}
+				],
+				"t_tmall": [
+					{
+						"version": "1.0",
+						"bid": "5831",
+						"dver": "1.0.0"
+					}
+				],
+				"t_custom_url_2_html": [
+					{
+						"bid": "5831",
+						"url_pattern_2_html_path": {
+							"^https?://(docs\\.qq\\.com)/mall/m/(index|doc|sheet|slide|form|smartcanvas|smartsheet|mind).*": "mall/index.html"
+						}
+					}
+				],
+				"tdoc_preload_webview_config": {
+					"enable": false,
+					"doc_bid": "4010",
+					"sheet_bid": "4311"
+				},
+				"container_webview_config": {
+					"iframe": {
+						"offline_resource_id": "4595",
+						"entry": "https://docs.qq.com/box/mobile.html",
+						"init_timeout": 5000,
+						"switch_content_timeout": 5000
+					},
+					"local_edit": {
+						"offline_resource_id": "4595",
+						"entry": "https://docs.qq.com/box/mobile.html",
+						"init_timeout": 5000,
+						"switch_content_timeout": 5000
+					}
+				},
+				"media_cache_config": {
+					"pattern": [
+						{
+							"pattern": "^https://qqadapt\\.qpic\\.cn/txdocpic/0/.*/(0(\\?.*)?|1123)$",
+							"type": "image"
+						},
+						{
+							"pattern": "^https://docimg\\d+\\.docs\\.qq.com/image/.*$",
+							"type": "image"
+						}
+					],
+					"config": {
+						"image": {
+							"maxCacheSize": 524288000
+						}
+					},
+					"manual_config": {
+						"image": {
+							"maxFilePerDoc": 100
+						}
+					}
+				},
+				"doc_url_rule": {
+					"pattern": "^https?://(?:doc\\.weixin\\.qq\\.com(?:/txdoc)?|docs\\.qq\\.com)/(doc|sheet|slide|smartsheet|aio|pdf|document|mall)(?:/|\\?docid=)(\\w+)"
+				}
+			}
+		}
+	}
+}
