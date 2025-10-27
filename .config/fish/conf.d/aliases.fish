@@ -4,5 +4,6 @@
 #alias cat='bat'
 #alias tree='exa --tree'
 alias e=$EDITOR
+alias et='emacsclient -t -a ""'
 alias vi=nvim
 alias vim=nvim

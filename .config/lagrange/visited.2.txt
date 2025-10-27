@@ -1,0 +1,5 @@
+1761542240 0000 about:help
+1761542318 0000 about:lagrange
+1761542329 0000 gemini://emacs
+1761542295 0000 gemini://git.skyjake.fi/lagrange/release/res/about/help.gmi
+1761542285 0000 gemini://skyjake.fi/lagrange/getting_started.gmi

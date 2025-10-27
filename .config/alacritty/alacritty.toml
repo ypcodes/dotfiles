@@ -3,8 +3,10 @@ TERM = "xterm-256color"
 WINIT_X11_SCALE_FACTOR = "1"
 
 [window]
+padding = { x = 8, y = 6 }
 dynamic_padding = true
-decorations = "full"
+# decorations = "full"
+decorations = "buttonless"
 title = "Alacritty@CachyOS"
 opacity = 0.8
 decorations_theme_variant = "Dark"
@@ -22,49 +24,57 @@ history = 10000
 multiplier = 3
 
 [colors]
+# 使用 Nord 主题
 draw_bold_text_with_bright_colors = true
-
 [colors.primary]
-background = "0x2E3440"
-foreground = "0xD8DEE9"
+background = "0x1E1E2E"
+foreground = "0xCDD6F4"
+
+[colors.cursor]
+text = "0x1E1E2E"
+cursor = "0xF5E0DC"
+
+[colors.selection]
+text = "0x1E1E2E"
+background = "0xF5E0DC"
 
 [colors.normal]
-black = "0x3B4252"
-red = "0xBF616A"
-green = "0xA3BE8C"
-yellow = "0xEBCB8B"
-blue = "0x81A1C1"
-magenta = "0xB48EAD"
-cyan = "0x88C0D0"
-white = "0xE5E9F0"
+black   = "0x45475A"
+red     = "0xF38BA8"
+green   = "0xA6E3A1"
+yellow  = "0xF9E2AF"
+blue    = "0x89B4FA"
+magenta = "0xF5C2E7"
+cyan    = "0x94E2D5"
+white   = "0xBAC2DE"
 
 [colors.bright]
-black = "0x4C566A"
-red = "0xBF616A"
-green = "0xA3BE8C"
-yellow = "0xEBCB8B"
-blue = "0x81A1C1"
-magenta = "0xB48EAD"
-cyan = "0x8FBCBB"
-white = "0xECEFF4"
+black   = "0x585B70"
+red     = "0xF38BA8"
+green   = "0xA6E3A1"
+yellow  = "0xF9E2AF"
+blue    = "0x89B4FA"
+magenta = "0xF5C2E7"
+cyan    = "0x94E2D5"
+white   = "0xA6ADC8"
 
 [font]
-size = 14
+size = 13
 
 [font.normal]
-family = "Inconsolata Nerd Font Propo"
+family = "JetBrains Mono Nerd Font Propo"
 style = "Regular"
 
 [font.bold]
-family = "Inconsolata Nerd Font Propo"
+family = "JetBrains Mono Nerd Font Propo"
 style = "Bold"
 
 [font.italic]
-family = "Inconsolata Nerd Font Propo"
+family = "JetBrains Mono Nerd Font Propo"
 style = "Italic"
 
 [font.bold_italic]
-family = "Inconsolata Nerd Font Propo"
+family = "JetBrains Mono Nerd Font Propo"
 style = "Bold Italic"
 
 [selection]
