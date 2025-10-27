@@ -297,6 +297,11 @@ binds {
         match namespace="^quickshell-overview$"
         place-within-backdrop true
     }
+    // Put swaybg inside the overview backdrop.
+    layer-rule {
+        match namespace="^wallpaper$"
+        place-within-backdrop true
+    }
 
     debug {
         honor-xdg-activation-with-invalid-serial

@@ -31,3 +31,12 @@ export LESSOPEN
 export LC_ALL="en_US.utf-8"
 
 #export PATH=$PATH:$HOME/.local/bin
+
+# ~/.config/fish/functions/keep_cursor_beam.fish
+function keep_cursor_beam --on-event fish_postexec
+    printf '\e[6 q'
+end
+
+function keep_cursor_beam_prompt --on-event fish_prompt
+    printf '\e[6 q'
+end
