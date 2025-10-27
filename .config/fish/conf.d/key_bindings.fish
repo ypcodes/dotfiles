@@ -9,6 +9,5 @@ function fish_user_key_bindings
     # Ctrl+G - 内容搜索
     bind \cg 'rgf; commandline -f repaint'
 
-    # Ctrl+O - 快速目录跳转
-    bind \co 'quickcd; commandline -f repaint'
+    bind \co 'yazi; commandline -f repaint'
 end

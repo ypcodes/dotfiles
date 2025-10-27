@@ -178,6 +178,7 @@ binds {
     spawn-at-startup "niri-autoname-workspaces"
     spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
     //spawn-sh-at-startup "swww img /home/peng/Pictures/Wallpapers/wallhaven-l81672.jpg" // Set wallpaper
+    spawn-sh-at-startup "swaybg -i ~/Pictures/overviewpaper-blurred.jpg -m fill"
     spawn-sh-at-startup "waybar" // Launch waybar
     //spawn-sh-at-startup "dms run" // Launch waybar
     spawn-at-startup "fcitx5 -d"
@@ -196,7 +197,7 @@ binds {
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
 
     layout {
-        gaps 16 // Gap between windows
+        gaps 12 // Gap between windows
         center-focused-column "never" // Don’t auto-center focused column
 
         preset-column-widths {
@@ -212,6 +213,7 @@ binds {
         }
 
         shadow {
+            on
             softness 30
             spread 5
             offset x=0 y=5
@@ -281,15 +283,11 @@ binds {
         open-floating true
     }
     window-rule {
-        match app-id="alacritty"
-        default-column-width {proportion 0.5;}
-    }
-    window-rule {
         match app-id="wezterm"
         open-floating true
     }
     window-rule {
-        geometry-corner-radius 0
+        geometry-corner-radius 10
         clip-to-geometry true
     }
 
@@ -306,7 +304,46 @@ binds {
     debug {
         honor-xdg-activation-with-invalid-serial
     }
+    overview {
+        zoom 0.4
+        workspace-shadow {
+            softness 40
+            spread 10
+            offset x=0 y=10
+            color "#00000050"
+        }
+    }
+    xwayland-satellite {
+        path "xwayland-satellite"
+    }
+    cursor {
+    // Hide the cursor after one second of inactivity.
+       hide-when-typing
+    }
+    layer-rule {
+        match namespace="waybar"
+        match at-startup=true
 
+        // Properties that apply continuously.
+        opacity 1.0
+        block-out-from "screencast"
+        // block-out-from "screen-capture"
+
+        shadow {
+            on
+            // off
+            softness 40
+            spread 5
+            offset x=0 y=5
+            draw-behind-window true
+            color "#00000064"
+            inactive-color "#00000064"
+        }
+
+        geometry-corner-radius 12
+        place-within-backdrop true
+        //baba-is-float true
+    }
 
 // ────────────── Environment Variables ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#environment
@@ -337,6 +374,7 @@ binds {
         ICON_THEME "Papirus-Dark"
         XCURSOR_THEME "Catppuccin-Macchiato-Dark-Cursors"
         QT_QPA_PLATFORMTHEME "qt5ct"
+        ELECTRON_OZONE_PLATFORM_HINT "auto"
 
     }
 
