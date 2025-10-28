@@ -78,6 +78,7 @@
 .config/gtkrc*
 .config/kde-gtk-configrc
 .config/plasma*rc
+.config/msmtp/config
 
 # 日志文件
 *.log
