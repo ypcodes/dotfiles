@@ -177,7 +177,7 @@ binds {
     spawn-sh-at-startup "/usr/lib/polkit-kde-authentication-agent-1 &" // Polkit
     spawn-at-startup "niri-autoname-workspaces"
     spawn-sh-at-startup "swww-daemon" // Wallpaper daemon
-    //spawn-sh-at-startup "swww img /home/peng/Pictures/Wallpapers/wallhaven-l81672.jpg" // Set wallpaper
+    spawn-sh-at-startup "swww img /home/peng/Pictures/Wallpapers/wallhaven-l81672.jpg" // Set wallpaper
     spawn-sh-at-startup "swaybg -i ~/Pictures/overviewpaper-blurred.jpg -m fill"
     spawn-sh-at-startup "waybar" // Launch waybar
     //spawn-sh-at-startup "dms run" // Launch waybar
