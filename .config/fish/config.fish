@@ -40,3 +40,5 @@ end
 function keep_cursor_beam_prompt --on-event fish_prompt
     printf '\e[6 q'
 end
+
+fzf_key_bindings

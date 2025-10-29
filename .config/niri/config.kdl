@@ -287,7 +287,7 @@ binds {
         open-floating true
     }
     window-rule {
-        geometry-corner-radius 10
+        geometry-corner-radius 0
         clip-to-geometry true
     }
 
@@ -340,7 +340,7 @@ binds {
             inactive-color "#00000064"
         }
 
-        geometry-corner-radius 12
+        geometry-corner-radius 0
         place-within-backdrop true
         //baba-is-float true
     }

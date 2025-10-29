@@ -79,6 +79,7 @@
 .config/kde-gtk-configrc
 .config/plasma*rc
 .config/msmtp/config
+.config/'Youtube Music'/
 
 # 日志文件
 *.log
