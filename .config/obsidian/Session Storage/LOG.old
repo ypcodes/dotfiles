@@ -1,2 +1,3 @@
-2025/10/26-21:12:12.216 8bc2 Creating DB /home/peng/.config/obsidian/Session Storage since it was missing.
-2025/10/26-21:12:12.248 8bc2 Reusing MANIFEST /home/peng/.config/obsidian/Session Storage/MANIFEST-000001
+2025/10/29-12:58:36.748 16dd1 Reusing MANIFEST /home/peng/.config/obsidian/Session Storage/MANIFEST-000001
+2025/10/29-12:58:36.749 16dd1 Recovering log #3
+2025/10/29-12:58:36.749 16dd1 Reusing old log /home/peng/.config/obsidian/Session Storage/000003.log 
