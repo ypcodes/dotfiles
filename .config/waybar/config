@@ -39,7 +39,7 @@
         "format-linked": "󰖐 {ifname} (No IP)",
         "format-disconnected": "󰖪 Disconnected",
         "tooltip-format": "{ifname} via {gwaddr} \nIP: {ipaddr}\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-        "on-click": "nm-connection-editor" // 点击时打开网络连接编辑器 (需要安装 network-manager-gnome)
+        "on-click": "nm-applet" // 点击时打开网络连接编辑器 (需要安装 network-manager-gnome)
     },
     "backlight": {
         "tooltip": false,
