@@ -10,10 +10,13 @@
 <VirtualBox xmlns="http://www.virtualbox.org/" version="1.12-linux">
   <Global>
     <ExtraData>
-      <ExtraDataItem name="GUI/LastWindowPosition" value="0,0,1342,756"/>
+      <ExtraDataItem name="GUI/LastItemSelected" value="m=da964449-65d3-4b25-904c-5a05a0cc9894"/>
+      <ExtraDataItem name="GUI/LastWindowPosition" value="0,0,729,710"/>
       <ExtraDataItem name="GUI/MediumSelector/DialogGeometry" value="0,0,665,710"/>
       <ExtraDataItem name="GUI/RecentFolderCD" value="/home/peng"/>
       <ExtraDataItem name="GUI/RecentListCD" value="--"/>
+      <ExtraDataItem name="GUI/Settings/ExpertMode" value="true"/>
+      <ExtraDataItem name="GUI/Tools/LastItemsSelected" value="Machines,Details"/>
       <ExtraDataItem name="GUI/VISOCreator/DialogGeometry" value="0,0,665,710"/>
     </ExtraData>
     <MachineRegistry>
