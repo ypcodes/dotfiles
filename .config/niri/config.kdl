@@ -43,7 +43,7 @@ binds {
     // ─── Applications ───
     MOD+RETURN                          hotkey-overlay-title="Open Terminal: alacritty" { spawn-sh "alacritty"; }
     MOD+SPACE                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "fuzzel"; }
-    MOD+R                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "~/.local/bin/wofi-run-systemd"; }
+    MOD+D                           hotkey-overlay-title="Open App Launcher: wofi" { spawn-sh "~/.local/bin/wofi-run-systemd"; }
     MOD+B                               hotkey-overlay-title="Open Browser: chromium browser" { spawn-sh "chromium"; }
     MOD+SHIFT+RETURN                               hotkey-overlay-title="kitty floating" {spawn "ndrop" "kitty" "--class" "kitty_1";}
     MOD+ALT+L                           hotkey-overlay-title="Lock Screen: swaylock" { spawn-sh "swaylock"; }
